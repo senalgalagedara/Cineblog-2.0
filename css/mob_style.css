@@ -1,0 +1,1014 @@
+@media (max-width: 600px) {
+    .nav > .nav-btn {
+      display: inline-block;
+      position: absolute;
+      right: 0px;
+      top: 0px;
+    }
+    .nav > .nav-btn > label {
+      display: inline-block;
+      width: 50px;
+      height: fit-content;
+      padding: 13px;
+    }
+    .nav > .nav-btn > label:hover
+    {
+      background-color: rgb(54, 52, 52);
+    }
+    .nav > .nav-btn > label > span {
+      display: block;
+      width: 25px;
+      height: 10px;
+      border-top: 2px solid #eee;
+    }
+    .nav > .nav-links {
+      position: absolute;
+      display: block;
+      width: 100%;
+      background-color: #000000;
+      height: 0px;
+      transition: all 0.3s ease;
+      overflow-y: hidden;
+      top: 50px;
+      left: 0;
+      padding: 0px;
+      text-align: center;
+    }
+    .nav > .nav-links > a {
+      display: block;
+      width: 100%;
+      margin-right: 50px !important;
+    }
+    .nav > #nav-check:not(:checked) ~ .nav-links {
+      height: 0px;
+     
+    }
+    .nav > #nav-check:checked ~ .nav-links {
+      height: calc(100vh - 50px);
+      overflow-y: auto;
+      
+    }
+
+  }
+  @media only screen and (max-width: 811px)
+  {
+    .headline{
+      font-size: 40px;
+      font-weight: bolder;
+      text-align: center;
+  }
+  .details
+  {
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    text-align: justify;
+  
+  }
+  .cast
+  {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: left;
+  }
+  .headtitle
+  {
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 30px;
+  font-weight: 500;
+  text-align: left;
+  margin:10px auto;
+  width: 80%;
+  
+  }
+  .title2{
+    display: flex;
+    width: 100%;
+  }
+  .text{
+    top: -50px;
+    padding-top: 40px;
+    padding-bottom: -50px;
+    padding-left:50px ;
+    width: 60%;
+    height:100%;
+    padding-right: 30px;
+  }
+  .slideshow-container {
+    margin: 0px ;
+    height: 100%;
+    position: relative;
+    margin: 0px;
+    overflow: visible;
+    z-index: -1;
+  }
+  .headimage{
+    width: 100%;
+    height: fit-content;
+  }
+
+.link
+{
+    color: #BB86FC;
+    font-size: 18px;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    margin-left: -50px;
+    padding-left: -100px;
+    white-space: nowrap;
+    overflow: visible;
+    
+}
+.title2{
+  display: flex;
+  margin: 0px;
+}
+}
+  
+  /* On smaller screens, decrease text size */
+  @media only screen and (max-width: 600px) {
+    body
+    {
+      padding: 0px;
+      margin: 0px;
+      box-sizing: border-box !important;
+      overflow-x: hidden !important;
+    }
+    .ado
+    {
+      margin: 0px;
+      padding: 0px;
+    }
+
+    .headline{
+        font-size: 30px;
+        font-weight: bolder;
+        text-align: center;
+        display: block;
+      
+    }
+    .details
+    {
+      font-family: 'Poppins', sans-serif;
+      font-size: 15px;
+      font-weight: 300;
+      text-align: justify;
+      width: 65%;
+      padding-right: 20px;
+      display: block;
+      margin: auto;
+    }
+    .cast
+    {
+      font-family: 'Poppins', sans-serif;
+      font-size: 14px;
+      font-weight: 400;
+      text-align: left;
+      display: block;
+      display: block;
+      margin: auto;
+      display: block;
+      margin: auto;
+    }
+    .title2{
+      display: flex;
+      margin: 0px;
+      width: 80%;
+      padding: 0px;
+      
+    }
+    .headtitle
+    {
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    font-weight: 800;
+    text-align: center;
+    margin: 0px auto;
+    width: 50%;
+    
+    }
+    .link
+    {
+      height: min-content;
+      color: #BB86FC;
+      font-size: 20px;
+      text-decoration: none;
+      font-family: 'Poppins', sans-serif;
+      font-weight: 500;
+      padding: 10px 10px;
+      width: 40%;
+      white-space: nowrap;
+      overflow: visible;
+      margin: 0px auto;
+      
+    }
+    .titlebox
+    {
+        margin-left: 0px;
+        padding: 0px;
+    }
+    .text{
+      top: -50px;
+      padding-top: 20px;
+      padding-left:30px ;
+      width: 90%;
+      padding-right: 30px;
+      
+    }
+    .slideshow-container {
+      
+      height: 100%;
+      position: relative;
+      margin: 0px;
+      overflow: hidden;
+      z-index: -1;
+    }
+    .headimage{
+      width: 100%;
+      height: fit-content;
+    }
+
+  }
+  @media only screen and (max-width: 527px) {
+    .details
+    {
+      display: none;
+    }
+  }
+  @media only screen and (max-width:900px)
+  {
+  .buttonslideright
+  {
+    display: none;
+  }
+  .buttonslideleft
+  {
+    display: none;
+  }
+  }
+  @media only screen and (max-width:850px){
+    #newsepa
+    {
+      display: none;
+    }
+    body
+  {
+    box-sizing: border-box !important;
+    overflow-x: hidden !important;
+    margin: 0px;
+  }
+    .titlebox
+  {
+      background-color: #282828;
+      border-radius: 5px;
+      display: block;
+      width: 96%;
+      margin:0px auto;
+      
+  }
+  
+    .boxes
+    {
+        display: flex;
+        overflow-x: scroll ;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+        width: 98%;
+        margin: 0px;
+        padding: 0px;
+    }
+    
+    .box
+    { 
+        width: 90px;
+        height: 260px;
+        display:inline-table;
+        margin: 0px;
+        border-radius: 10px;
+        padding: 10px 5px;
+        
+    }
+    .boxbl
+  {
+    cursor: pointer;  
+    width: 200px;
+    margin: 0px;
+    border-radius: 10px;
+    padding: 10px 5px;
+  }
+    .boxpage
+    {
+        
+        width: 190px;
+        height: 300px;
+        display:inline-table;
+        margin: 0px 1px;
+        border-radius: 10px;
+        padding: 10px 10px;
+        
+    }
+    .container2 {
+      position: relative;
+      cursor: pointer;
+      width: 190px;
+      height: 300px;
+      margin: 0px;
+      border-radius: 7px;
+      padding: 10px 13px;
+      transition: .5s;
+    }
+    
+    .boximg
+      {
+        height: 210px;
+        width: 170px !important; 
+        margin: 0px auto ;
+        display: block;
+        border-radius: 10px;
+        padding: 0px;
+      }
+      .blackbox
+  {
+    height: 250px !important;
+    width: 170px !important;
+    background-color: #000;
+    margin:10px auto;
+    display: block;
+    border-radius: 10px;
+    padding: 5px;
+  }
+      .moviename
+  { 
+    width: 180px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    text-align: center;
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    display: block;
+  
+  }
+      a
+  {
+    margin: 0px;
+    padding: 0px;
+  }
+  
+  }
+  @media only screen and (max-width:600px) {
+    body
+      {
+        padding: 0px;
+        margin: 0px;
+        box-sizing: border-box !important;
+        overflow-x: hidden !important;
+      }
+    .titlebox
+    {
+        background-color: #282828;
+        border-radius: 10px;
+        display: block;
+        padding: 10px;
+        width: 90%;
+        margin: 0px auto ;
+        
+    }
+    .box
+  {
+  
+      width: 90px;
+      height: 200px;
+      margin: 10px 0px;
+      border-radius: 5px;
+      padding:10px 5px;
+      
+  }
+  .container2 {
+    position: relative;
+    cursor: pointer;
+    width: 160px;
+    height: 200px;
+    margin: 0px;
+    border-radius: 7px;
+    padding: 10px 13px;
+    transition: .5s;
+  }
+  .boxpage
+  {
+  
+      width: 160px;
+      height: 200px;
+      margin: 10px 0px;
+      border-radius: 5px;
+      padding:10px 0px;
+      
+  }
+  .boxes
+  {
+    overflow-x: scroll ;
+    display: flex;
+    width: 90%;
+    margin: 20px auto;
+    padding: 0px;
+  }
+  
+  .boximg 
+  {
+    height: 210px;
+    width: 170px !important; 
+    margin: 0px auto ;
+    display: block;
+    border-radius: 10px;
+    padding: 0px;
+  }
+  .blackbox
+  {
+    height: 300px;
+    width: 300px;
+    background-color: #000;
+    margin:10px auto;
+    display: flex;
+    border-radius: 10px;
+    padding: 5px;
+  }
+  .moviename
+  {
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    text-align: center;
+    color: white;
+    width: 180px;
+  }
+  a
+  {
+    margin: 0px;
+    padding: 0px;
+  }
+  .link
+  {
+      color: #BB86FC;
+      font-size: 15px;
+      text-decoration: none;
+      font-family: 'Poppins', sans-serif;
+      font-weight: 500;
+      margin: auto;
+      width: 40%;
+      white-space: nowrap;
+      overflow: visible;
+  }
+  .readmorebtn2
+  {
+    display: none;
+  }
+  .end
+  {
+      display: block !important;
+      background: black;
+      margin: 0px !important;
+  }
+  }
+  @media only screen and (max-width:1114px) {
+    .footerboxes
+  {
+      display: flex;
+      width: 100%;
+      text-align: center;
+      padding: 5px 5px;
+      font-family: 'Poppins', sans-serif;
+      font-size: 14px;
+      font-weight: 400;
+      color: white;
+      white-space: nowrap;
+      overflow: visible;
+      margin:0px !important;
+  
+  }
+  
+  .footerboxelogo
+  {
+      display: block;
+      font-family: 'Caveat', cursive;
+      font-size: 18px;
+      font-weight: 500;
+      color: white;
+      text-align: center;
+      width: 90%;
+      padding-top: 10px;
+      height: 50px   !important;
+      margin-top: 10px !important;
+      margin-left: auto;
+      margin-right: auto;
+  }
+  
+  .footerul
+  {
+      display: block;
+      list-style-type: none;
+      width: 90%;
+      height: 100px !important;
+      padding: 0px 0px;
+      margin: 15px !important;
+      text-align: center !important;
+  }
+    
+  }
+  @media only screen and (max-width:597px) {
+    body
+  {
+    position: relative;
+    margin: 0px;
+    box-sizing: border-box;
+    overflow-x: hidden;
+  }
+    .footerboxes
+  {
+      display: flex;
+      width: 100%;
+      text-align: center;
+      padding: 5px 0px;
+      font-family: 'Poppins', sans-serif;
+      font-size: 13px;
+      font-weight: 400;
+      color: white;
+      white-space: nowrap;
+      overflow: visible;
+      margin: 0px;
+  
+  }
+  
+  .footerboxelogo
+  {
+      display: flex;
+      font-family: 'Caveat', cursive;
+      font-size: 15px;
+      font-weight: 500;
+      color: white;
+      text-align: center;
+      width: 90%;
+      height: fit-content;
+      margin-top: 60px;
+  }
+  
+  .footerul
+  {
+      display: block;
+      list-style-type: none;
+      width: 90%;
+      height: fit-content;
+      padding: 0px;
+      margin: 0px;
+      font-size: 16px;
+      padding-top: 20px;
+    
+  }
+  }
+  @media only screen and (max-width:600px) 
+  {
+    .box1
+  {
+    margin: 0px;
+    padding: 0px;
+    display: block;
+    font-size: 15px;
+  }
+  .aboutmovie
+  {
+    background-color: #000000;
+    width: 90%;
+    margin: 20px auto;
+    padding: 5px 10px;
+    border-radius: 3px;
+    opacity: .8;
+  }
+  .emptybox
+  {
+    width: 90%;
+    margin: 20px auto;
+  }
+  .infotitle
+  {
+    padding-left: 20px;
+  }
+  .align 
+  {
+    margin-left: 10px !important;
+  }
+  .googleinfo
+  {
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-size: 15px;
+    font-weight: 300;
+    text-align: justify;
+    padding-left: 20px;
+  }
+  .googleinfo2
+  {
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-size: 12px;
+    font-weight: 200;
+    text-align: justify;
+    padding:0px 10px;
+  }
+  .text1 {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    text-align: center;
+    padding:10px 10px;
+    font-family: 'Poppins', sans-serif;
+    margin: 0px;
+  }
+  .castbox
+  {
+    margin: 10px auto;
+    padding: 10px 20px;
+    display: block;
+    width: 90%;
+  }
+  .castdit
+  {
+    display: flex;
+    margin: 10px auto;
+  }
+  .castname
+  { 
+    display: block;
+    margin:auto;
+    font-size: 15px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    text-align: center !important;
+  }
+  ul , li
+  {
+    list-style: none;
+    line-break: normal;
+    padding: 0px 5px;
+    margin: 0px 5px;
+    width: 100%;
+  }
+  .role
+  {
+    display: block;
+    margin: auto 0px;
+    padding: 0px;
+    font-size: 14px;
+    color: #03DAC5;
+    font-family: 'Poppins', sans-serif;
+    width: 100px;
+  }
+  .castimg
+  {
+    width: 80px;
+    height: 100px;
+    border-radius: 5px;
+    margin-left: 20px;
+    display: block;
+  }
+  .reviewspace
+  {
+    padding: 0px;
+    margin: 0px;
+    display: block;
+  }
+  .revbg
+  {
+    background-color: #000000;
+    width: 90%;
+    margin-left: 5px !important;
+    margin-right: 8px !important;
+    padding: 10px 20px;
+    border-radius: 3px;
+    opacity: .8;
+    display: block;
+  }
+  .writing
+  {
+    color: white;
+    font-size: 13px;
+    text-align: justify;
+    font-family: 'Poppins', sans-serif;
+  }
+  .mvid
+  {
+    margin-top: 10px;
+    display: block;
+    width: 100%;
+    background-color: transparent !important;
+  }
+  .mvid1
+  {
+    display: block;
+    width: 100%;
+  }
+  .emptybox2
+  {
+    width: 90%;
+    margin: 20px auto;
+  
+  }
+  .movieratefinal
+  {
+    width: 97%;
+    height: fit-content;
+    background-color: #000000;
+    display: block;
+    margin: 20px auto;
+    border-radius: 5px;
+    padding-bottom: 20px;
+  }
+  .infotitlefinal
+  {
+    font-family: "Roboto Condensed", sans-serif;
+    font-weight: 400;
+    color: white;
+    font-size: 25px;
+    opacity: 1;
+    text-align: center  ;
+    margin: 20px auto;
+    padding: 20px 0px 0px 0px ;
+  }
+  .hyimg
+  {
+    height: 100px;
+    float: right;
+    border-radius: 8px;
+    margin: 20px;
+  }
+  .bigratetext
+  {
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-size: 50px;
+    font-weight: 700;
+    text-align: left;
+    margin:auto 20px;
+  }
+  .box5
+  {
+    width: 98%;
+    display: block;
+    margin: 0px auto;
+  }
+  .otherrev
+  {
+    width: 90%;
+    height: fit-content;
+    background-color: #000000;
+    display: block;
+    margin: 10px ;
+    border-radius: 5px;
+    padding: 5px 10px;
+  }
+  table
+  {
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    color: white;
+  }
+  tr,td
+  {
+    display: flex;
+    padding: 10px 5px;
+    margin: 0px 5px;
+  }
+  .emptybox3
+  {
+    width: 100%;
+    margin: 20px auto;
+  
+  }
+  }@media screen and (min-width: 601px) and (max-width: 910px) {
+    .searchbar {
+        display: inline-flex;
+        margin: 10px auto;
+        width: 40%;
+    }
+    .fa-solid
+  {
+    background-color: transparent;
+    color: white;
+    margin: 20px 20px;
+    padding: 0px;
+    cursor: pointer;
+  }
+  .result-box {
+      color: white;
+      width: 100% !important;
+      overflow-x: hidden;
+      padding: 0px 0px;
+      display: block;
+      margin: 0px ;
+    }
+      .searchln
+  {
+    display: block;
+    margin: 0px auto;
+    padding: 0px;
+  }
+    
+    .listboxul {
+      background-color: #424242;  
+      width: 85%;
+      list-style-type: none;
+      padding: 10px 0px;
+      border-radius: 10px;
+      margin:0px auto;
+      display: block;
+      
+    }
+  }
+  @media only screen and (max-width:600px) 
+  {
+    .searchbar {
+      display: block;
+      margin: 10px auto;
+      width: 50%;
+  }
+  .fa-solid
+  {
+  background-color: transparent;
+  color: white;
+  margin: 20px 20px;
+  padding: 0px;
+  cursor: pointer;
+  }
+  .hmm
+  {
+    width: 100%;
+    left: 0;
+  }
+  .result-box {
+    width: 90% !important;
+    margin-right:40px !important;
+    padding: 0px !important;
+  
+  }
+  .listboxul {
+    background-color: #424242;  
+    width: 200%;
+    list-style-type: none;
+    padding: 10px 0px;
+    margin: 0px auto;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  .podidetails2
+  {
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-size: 13px;
+    padding: 0px 10px;
+    margin-top: 60px;
+    text-align: left;
+  
+  }
+  .listboxul {
+    background-color: #282828;  
+    width: 90%;
+    list-style-type: none;
+    margin: 0px 10px;
+    padding:10px 0px;
+    left: 0;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 1.5px solid gray;
+  }
+  }@media screen and (max-width: 820px)
+  {
+    .contentek
+    {
+      display: none;
+    }
+  }
+  @media screen and (max-width: 1070px) {
+    .newsboxes
+    {
+      width: 95%;
+      display: flex;
+      overflow-x: scroll !important;
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+      margin: 10px auto;
+    }
+  }    
+  @media screen and (max-width: 400px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 90%;
+       margin: auto;
+       display: block;
+    }
+  }
+  @media screen and (max-width: 640px) {
+    .modal-content
+    {
+      padding: 2px;
+      width: 90%;
+    }
+   .idk 
+   {
+     font-size: 17px;
+   }
+   .idk2
+   {
+    color: whitesmoke;
+    font-size: 13px;
+   }
+   label
+   {
+    font-size: 13px;
+   }
+  }
+  @media (max-width: 745px) 
+{
+  .mynav{
+    display: block;
+    height: fit-content;
+  }
+.linkorder
+{
+  display: flex;
+  width: 100%;
+  padding: 10px;
+}
+.nostyle
+{
+margin: auto;
+width: 25%;
+display: block;
+}
+}
+
+@media (max-width: 500px) 
+{
+  body
+  {
+    margin-top: 0px !important;
+  }
+.mynav
+{
+  display: block;
+  height: fit-content;
+  width: 100%;
+  margin-top: -10px !important;
+  padding-top: 10px;
+}
+.spaceforlogo
+{
+  display: block;
+  width: 100%;
+  margin: auto;
+  text-align: center;
+}
+
+.spaceforsearch
+{
+  width: 90%;
+  display: flex;
+  margin: 10px auto 0px;
+  padding:0px;
+  height: 40px;
+}
+}
+@media only screen and (min-width:1100px)
+{
+  .headline
+  {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 60px;
+    font-weight: bolder;
+    text-align: right;
+  }
+  .podidetails
+  {
+    font-size: 20px;
+  }
+  .details{ 
+    font-size: 20px;
+  }
+  .cast{
+    font-size: 18px;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+    #cookiePopup {
+      width: 100%;
+    }
+    .hide {
+      bottom: 2em;
+      right: 0;
+    }
+    .show {
+      right: 0;
+      bottom: 0;
+    }
+  }
