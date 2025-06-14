@@ -23,8 +23,9 @@
 <body>
     <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
     <button onclick="document.getElementById('id02').style.display='block'" style="width:auto;">Sign Up</button>  
+
+
 <div id="id01" class="modal">
-  
   <form class="modal-content animate"
   style="width:40%; display:block; margin:auto;" action="" method="post">
     <div class="imgcontainer">
@@ -54,19 +55,19 @@
 
 <div id="id02" class="modal">
   <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-  <form class="modal-content" action="/action_page.php"  style="width:40%; display:block; margin:auto;">
+  <form class="modal-content" action="../controller/userController.php"  style="width:40%; display:block; margin:auto;">
     <div class="container">
       <h1 class="idk">Register</h1>
       <p class="idk2">Get start with an account to rate and review movies, TV shows and anime.</p>
       <hr>
       <label for="email"><b>Username</b></label>
-      <input type="text" placeholder="Enter unsername" name="email" required>
+      <input type="text" placeholder="Enter unsername" name="Username" required>
 
       <label for="email"><b>Email</b></label>
-      <input type="text" placeholder="Enter Email" name="email" required>
+      <input type="text" placeholder="Enter Email" name="Email" required>
 
       <label for="psw"><b>Password</b></label>
-      <input type="password" placeholder="Enter Password" name="psw" required>
+      <input type="password" placeholder="password" name="psw" required>
 
       <label for="psw-repeat"><b>Confirm Password</b></label>
       <input type="password" placeholder="Confirm Password" name="psw-repeat" required>

@@ -1,5 +1,5 @@
 <?php
-class User {
+class usermodel {
     private $conn;
     private $table = "user_sign";
 

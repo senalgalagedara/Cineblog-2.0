@@ -1,7 +1,7 @@
 <?php
-require_once __DIR__ . '/../model/User.php';
+require_once __DIR__ . '/../model/user.php';
 
-class UserService {
+class userService {
     private $db;
 
     public function __construct($db) {
@@ -9,7 +9,7 @@ class UserService {
     }
 
     public function register($data) {
-        $user = new User($this->db);
+        $user = new usermodel($this->db);
         $user->username = $data['username'];
         $user->useremail = $data['useremail'];
         $user->password = $data['password'];
@@ -18,7 +18,7 @@ class UserService {
     }
 
     public function login($data) {
-        $user = new User($this->db);
+        $user = new usermodel($this->db);
         $user->useremail = $data['useremail'];
         $user->password = $data['password'];
 
@@ -26,12 +26,12 @@ class UserService {
     }
 
     public function getUser($id) {
-        $user = new User($this->db);
+        $user = new usermodel($this->db);
         return $user->getUserById($id);
     }
 
     public function deleteUser($id) {
-        $user = new User($this->db);
+        $user = new usermodel($this->db);
         return $user->deleteUser($id);
     }
 }

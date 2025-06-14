@@ -1,11 +1,11 @@
 <?php
-require_once __DIR__ . '/../config/database.php';
-require_once __DIR__ . '/../service/UserService.php';
+require_once __DIR__ . '/../config/config.php';
+require_once __DIR__ . '/../service/userService.php';
 
 session_start();
 
-$db = (new Database())->connect();
-$userService = new UserService($db);
+$db = (new config())->connect();
+$userService = new userService($db);
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if (isset($_POST['register'])) {

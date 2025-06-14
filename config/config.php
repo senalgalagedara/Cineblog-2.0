@@ -1,5 +1,5 @@
 <?php
-class Database {
+class config {
     private $host = "localhost";
     private $db_name = "movieblog";
     private $username = "root";
