@@ -21,63 +21,40 @@
     </script>
 </head>
 <body>
-    <!--<div class="nav">
-        <input type="checkbox" id="nav-check">
-        <div class="nav-header">
-          <div class="nav-title">
-            <a href="cineblog.php" class="homelink">CINEBLOG</a>
-          </div>
-        </div>
-        <div class="nav-btn">
-          <label for="nav-check">
-            <span></span>
-            <span></span>
-            <span></span>
-          </label>
-        </div>
-        <div class="nav-links">
-          <a href="movies.php">MOVIES</a>
-          <a href="tseries.php">T SERIES</a>
-          <a href="anime.php">ANIME</a>
-          <a href="../index.html">LANKANBLOG.lk</a>
-  <!--<span class="searchln"></span>
-            <i class="fa-solid fa-magnifying-glass" onclick="toggleSearch()"></i>
-            <input class="searchba searchbar"type="text" id="input-box" placeholder="Type to search...">
-            <div class="result-box hmm"></div>
-            <script src='js/allwork.js'></script>
-        </div>
-
-    </div>-->
     <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
     <button onclick="document.getElementById('id02').style.display='block'" style="width:auto;">Sign Up</button>  
 <div id="id01" class="modal">
   
-  <form class="modal-content animate" action="/action_page.php" method="post">
+  <form class="modal-content animate"
+  style="width:40%; display:block; margin:auto;" action="" method="post">
     <div class="imgcontainer">
-      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" 
+      style="size: 25px;" title="Close Modal">&times;</span>
     </div>
 
     <div class="container">
+      <h1 class="idk">Login</h1>
+      <p class="idk2">Login to your account</p>
+      <hr>
       <label for="uname"><b>Username/Email</b></label>
       <input type="text" placeholder="Enter Username or email" name="uname" required>
 
       <label for="psw"><b>Password</b></label>
       <input type="password" placeholder="Enter Password" name="psw" required>
         
-      <button type="submit">Login</button>
-      
-    </div>
+      <button type="signupbtn" style="border-radius: 10px ; background-color:green;">Login</button>
+      <button type="button"
+      style="background-color:red;"
+       onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
 
-    <div class="container" style="background-color:#f1f1f1">
-      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-      <span class="psw">Forgot <a href="#">password?</a></span>
+      
     </div>
   </form>
 </div>
 
 <div id="id02" class="modal">
   <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-  <form class="modal-content" action="/action_page.php">
+  <form class="modal-content" action="/action_page.php"  style="width:40%; display:block; margin:auto;">
     <div class="container">
       <h1 class="idk">Register</h1>
       <p class="idk2">Get start with an account to rate and review movies, TV shows and anime.</p>
@@ -91,8 +68,8 @@
       <label for="psw"><b>Password</b></label>
       <input type="password" placeholder="Enter Password" name="psw" required>
 
-      <label for="psw-repeat"><b>Repeat Password</b></label>
-      <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+      <label for="psw-repeat"><b>Confirm Password</b></label>
+      <input type="password" placeholder="Confirm Password" name="psw-repeat" required>
       
       <label>
         <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
@@ -101,8 +78,9 @@
       <p class="idk2">By joining cineblog you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
 
       <div class="clearfix">
-        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-        <button type="submit" class="signupbtn">Sign Up</button>
+        <button type="submit" style="background-color:green;" class="signupbtn">Sign Up</button>
+        <button type="button" style="background-color:red;"
+         onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
       </div>
     </div>
   </form>
