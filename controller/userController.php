@@ -12,7 +12,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $data = [
             'username' => $_POST['username'],
             'useremail' => $_POST['useremail'],
-            'password' => $_POST['password']
+            'password' => $_POST['password'],
+            'cpassword' => $_POST['cpassword']
         ];
         if ($userService->register($data)) {
             header("Location: ../views/login.php?success=registered");

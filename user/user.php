@@ -38,10 +38,10 @@
       <p class="idk2">Login to your account</p>
       <hr>
       <label for="uname"><b>Username/Email</b></label>
-      <input type="text" placeholder="Enter Username or email" name="uname" required>
+      <input type="text" placeholder="Enter Username or email" name="username" required>
 
       <label for="psw"><b>Password</b></label>
-      <input type="password" placeholder="Enter Password" name="psw" required>
+      <input type="password" placeholder="Enter Password" name="password" required>
         
       <button type="signupbtn" style="border-radius: 10px ; background-color:green;">Login</button>
       <button type="button"
@@ -55,22 +55,24 @@
 
 <div id="id02" class="modal">
   <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-  <form class="modal-content" action="../controller/userController.php"  style="width:40%; display:block; margin:auto;">
+  <form class="modal-content"
+  method="POST"
+  action="../controller/userController.php"  style="width:40%; display:block; margin:auto;">
     <div class="container">
       <h1 class="idk">Register</h1>
       <p class="idk2">Get start with an account to rate and review movies, TV shows and anime.</p>
       <hr>
       <label for="email"><b>Username</b></label>
-      <input type="text" placeholder="Enter unsername" name="Username" required>
+      <input type="text" placeholder="Enter unsername" name="username" required>
 
       <label for="email"><b>Email</b></label>
-      <input type="text" placeholder="Enter Email" name="Email" required>
+      <input type="text" placeholder="Enter Email" name="useremail" required>
 
       <label for="psw"><b>Password</b></label>
-      <input type="password" placeholder="password" name="psw" required>
+      <input type="password" placeholder="password" name="password" required>
 
       <label for="psw-repeat"><b>Confirm Password</b></label>
-      <input type="password" placeholder="Confirm Password" name="psw-repeat" required>
+      <input type="password" placeholder="Confirm Password" name="cpassword" required>
       
       <label>
         <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
@@ -79,7 +81,7 @@
       <p class="idk2">By joining cineblog you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
 
       <div class="clearfix">
-        <button type="submit" style="background-color:green;" class="signupbtn">Sign Up</button>
+        <button type="submit" name="register" style="background-color:green;" class="signupbtn">Sign Up</button>
         <button type="button" style="background-color:red;"
          onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
       </div>

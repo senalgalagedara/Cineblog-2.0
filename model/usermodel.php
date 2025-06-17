@@ -7,19 +7,23 @@ class usermodel {
     public $username;
     public $useremail;
     public $password;
+    public $cpassword;
+
 
     public function __construct($db) {
         $this->conn = $db;
     }
 
     public function register() {
-        $query = "INSERT INTO {$this->table} (username, useremail, password) VALUES (:username, :useremail, :password)";
+        $query = "INSERT INTO {$this->table} (username, useremail, password,cpassword) VALUES (username, useremail, password,cpassword)";
         $stmt = $this->conn->prepare($query);
         $this->password = password_hash($this->password, PASSWORD_BCRYPT);
 
-        $stmt->bindParam(":username", $this->username);
-        $stmt->bindParam(":useremail", $this->useremail);
-        $stmt->bindParam(":password", $this->password);
+        $stmt->bindParam("username", $this->username);
+        $stmt->bindParam("useremail", $this->useremail);
+        $stmt->bindParam("password", $this->password);
+        $stmt->bindParam("cpassword", $this->cpassword);
+
 
         return $stmt->execute();
     }

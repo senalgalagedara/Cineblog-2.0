@@ -1,5 +1,5 @@
 <?php
-require_once __DIR__ . '/../model/user.php';
+require_once __DIR__ . '/../model/usermodel.php';
 
 class userService {
     private $db;
@@ -13,6 +13,7 @@ class userService {
         $user->username = $data['username'];
         $user->useremail = $data['useremail'];
         $user->password = $data['password'];
+        $user->cpassword = $data['cpassword'];
 
         return $user->register();
     }
