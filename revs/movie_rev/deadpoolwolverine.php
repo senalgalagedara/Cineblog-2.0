@@ -3,8 +3,8 @@ require_once __DIR__ . '/../../includes/session.php';
 require_once __DIR__ . '/../../includes/movie_helper.php';
 
 // Define movie details
-$movie_id = 'barbie';
-$movie_title = 'Barbie';
+$movie_id = 'deadpoolwolverine';
+$movie_title = 'Deadpool & Wolverine';
 $movie_type = 'movie';
 ?>
 <!DOCTYPE html>
@@ -12,10 +12,10 @@ $movie_type = 'movie';
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Barbie - CINEBLOG</title>
-    <link rel="icon" type="image/x-icon" href="../../assert/img/favicon.ico" async>
-    <meta name="description" content="Barbie: A fun and adventurous film following the iconic doll, Barbie, as she embarks on a journey of self-discovery and empowerment.">
+    <title>Deadpool & Wolverine - CINEBLOG</title>
+    <meta name="description" content="Deadpool and Wolverine: A thrilling crossover that brings together the irreverent Deadpool and the fierce Wolverine in an action-packed adventure.">
 
+    <link rel="icon" type="image/x-icon" href="../../assert/img/favicon.ico" async>
     <meta name='viewport' content='width=device-width, initial-scale=1' async>
     <link rel='stylesheet' type='text/css' media='screen' href="../../assert/css/style.css" async>
     <script src="../../assert/js/allwork.js" async></script>
@@ -34,12 +34,12 @@ $movie_type = 'movie';
       <div class="slideshow-container">
 
           <div class="mySlides fade">
-            <img src="../../assert/img/coverpics/barbie.jpg" class="headimagem">
+            <img src="../../assert/img/coverpics2/Deadpool & Wolverine.jpg" class="headimagem">
             <div class="text">
-              <span class="headline">Barbie </span>
-              <p class="podidetails">2023   |   Comaedy/Fantasy    |    1h 54m</p>
-              <p class="details">Barbie and Ken are having the time of their lives in the colorful and seemingly perfect world of Barbie Land. However, when they get a chance to go to the real world, they soon discover the joys and perils of living among humans.</p>
-              <p class="cast">Ryan Gosling | Margot Robbie | Simu Liu</p>
+              <span class="headline">Deadpool & Wolverine</span>
+              <p class="podidetails">2024   |   Action/Comedy    |    </p>
+              <p class="details"> Wolverine is recovering from his injuries when he crosses paths with the loudmouth, Deadpool. They team up to defeat a common enemy.</p>
+              <p class="cast">Ryan Reynolds | Hugh Jackman | Owen Wilson</p>
             </div>
             <br>
           </div>
@@ -54,67 +54,62 @@ $movie_type = 'movie';
         <h2 class="infotitle">Movie Information</h2>
         <h3 class="listdetails boldd align">Plot Summary</h2>
 
-        <p class="googleinfo">Barbie and Ken are having the time of their lives in the colorful and seemingly perfect world of Barbie Land. However, when they get a chance to go to the real world, they soon discover the joys and perils of living among humans.</p>
+        <p class="googleinfo"> Wolverine is recovering from his injuries when he crosses paths with the loudmouth, Deadpool. They team up to defeat a common enemy.</p>
         <ul>
-          <li class="listdetails"><b class="boldd">Release Date:</b> July 21, 2023</li>
-          <li class="listdetails"><b class="boldd">Genre:</b>Comedy & Fantasy</li>
-          <li class="listdetails"><b class="boldd">Director:</b>Greta Gerwig</li>
-          <li class="listdetails"><b class="boldd">Producer:</b>David Heyman, Margot Robbie</li>
-          <li class="listdetails"><b class="boldd">Box Office:</b>$1.4B</li>
-          <li class="listdetails"><b class="boldd">Duration:</b>1h 54m</li>
-          <li class="listdetails"><b class="boldd">Distributer:</b>Warner Bros. Pictures</li>
+          <li class="listdetails"><b class="boldd">Release Date:</b> July 26, 2024</li>
+          <li class="listdetails"><b class="boldd">Genre:</b>Action & Comedy</li>
+          <li class="listdetails"><b class="boldd">Director:</b>Shawn Levy</li>
+          <li class="listdetails"><b class="boldd">Producer:</b>Kevin Feige</li>
+          <li class="listdetails"><b class="boldd">Box Office:</b>N/A</li>
+          <li class="listdetails"><b class="boldd">Duration:</b>N/A</li>
+          <li class="listdetails"><b class="boldd">Distributer:</b>Walt Disney Studios</li>
         </ul>
         <div class="castbox">
 
           <div class="castdit">
-            <img class="castimg" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Greta_Gerwig_at_Barbie_Movie_Reception_%28headshot%29.jpg/440px-Greta_Gerwig_at_Barbie_Movie_Reception_%28headshot%29.jpg">
-            <p class="castname">Greta Gerwig</p>
+            <img class="castimg" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Shawn_Levy_by_Gage_Skidmore_2.jpg/440px-Shawn_Levy_by_Gage_Skidmore_2.jpg">
+            <p class="castname">Shawn Levy</p>
             <p class="role">Director</p>
           </div>
           <div class="castdit">
-            <img class="castimg" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/GoslingBFI081223_%2822_of_30%29_%2853388157347%29_%28cropped%29.jpg/440px-GoslingBFI081223_%2822_of_30%29_%2853388157347%29_%28cropped%29.jpg">
-            <p class="castname">Ryan Gosling</p>
-            <p class="role">Ken</p>
+            <img class="castimg" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Deadpool_2_Japan_Premiere_Red_Carpet_Ryan_Reynolds_%28cropped%29.jpg/440px-Deadpool_2_Japan_Premiere_Red_Carpet_Ryan_Reynolds_%28cropped%29.jpg">
+            <p class="castname">Ryan Reynolds</p>
+            <p class="role">Deadpool</p>
           </div>
           <div class="castdit">
-            <img class="castimg" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Simu_Liu_by_Gage_Skidmore.jpg/440px-Simu_Liu_by_Gage_Skidmore.jpg">
-            <p class="castname">Simu Liu</p>
-            <p class="role">Ken</p>
+            <img class="castimg" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Logan_Japan_Premiere_Red_Carpet-_Hugh_Jackman_%2838445328406%29_%28rotated%29.jpg/440px-Logan_Japan_Premiere_Red_Carpet-_Hugh_Jackman_%2838445328406%29_%28rotated%29.jpg">
+            <p class="castname">Hugh Jackman</p>
+            <p class="role">Wolverine</p>
           </div>
           <div class="castdit">
-            <img class="castimg" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Margot_Robbie_Vogue_Barbie_2023_03.jpg/440px-Margot_Robbie_Vogue_Barbie_2023_03.jpg">
-            <p class="castname">Margot Robbie</p>
-            <p class="role">Barbie</p>
+            <img class="castimg" src="https://upload.wikimedia.org/wikipedia/commons/4/49/Owen_Wilson_Cannes_2011.jpg">
+            <p class="castname">Owen Wilson</p>
+            <p class="role">Mobius M. Mobius</p>
           </div>
           <div class="castdit">
-            <img class="castimg" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Emma_Mackey_%282%29.jpg/440px-Emma_Mackey_%282%29.jpg">
-            <p class="castname">Emma Macjey</p>
-            <p class="role">barbie</p>
-          </div>
-          <div class="castdit">
-            <img class="castimg" src="https://upload.wikimedia.org/wikipedia/commons/c/c2/Will_Ferrell_2012.jpg">
-            <p class="castname">Will Ferrell</p>
-            <p class="role">Mattel CEO</p>
+            <img class="castimg" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Morena_Baccarin_by_Gage_Skidmore_2.jpg/440px-Morena_Baccarin_by_Gage_Skidmore_2.jpg">
+            <p class="castname">Morena Baccarin</p>
+            <p class="role">Vanessa Carlysle</p>
           </div>
         </div>
       </div>
-      
     </div>
     <div class="space"></div>
 
     <?php renderWatchlistButtons($movie_id, $movie_title, $movie_type); ?>
 
     <div class="movieratefinal">
-      <h2 class="infotitlefinal">BARBIE</h2>
-      <p class="infoshow">2023   |   Comedy/Fantasy    |    1h 54m</p>
+      <h2 class="infotitlefinal">Deadpool & Wolverine</h2>
+      <p class="infoshow">2024   |   Action/Comedy    |    N/A</p>
       <div class="box2">
         <div class="box3">
           <img src="../../assert/img/hydracastlogo.jpg" class="hyimg">
         </div>
-        <p class="bigratetext">9.0</p>
+        <p class="bigratetext">N/A</p>
       </div>
       
     </div>
+
     <div class="space"></div>
 
     <?php renderReviewSection($movie_id, $movie_title, $movie_type); ?>
@@ -149,10 +144,13 @@ $movie_type = 'movie';
             <td><img src="../../assert/img/hydracastlogo.jpg" class="ratinglogo">7.5</td>
             <td><a class="footlink" href="antman1.php">Ant Man 1</td></a>
           </tr>
+          <tr>
+            <td><img src="../../assert/img/hydracastlogo.jpg" class="ratinglogo">8.0</td>
+            <td><a class="footlink" href="thefallguy.php">The Fall Guy</td></a>
+          </tr>
         </table>
       </div>
       </div>
-      
     </div>
 <div class="space"></div>
 <div class="space"></div>

@@ -3,8 +3,8 @@ require_once __DIR__ . '/../../includes/session.php';
 require_once __DIR__ . '/../../includes/movie_helper.php';
 
 // Define movie details
-$movie_id = 'barbie';
-$movie_title = 'Barbie';
+$movie_id = 'thegodfather1';
+$movie_title = 'The Godfather';
 $movie_type = 'movie';
 ?>
 <!DOCTYPE html>
@@ -12,10 +12,10 @@ $movie_type = 'movie';
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Barbie - CINEBLOG</title>
-    <link rel="icon" type="image/x-icon" href="../../assert/img/favicon.ico" async>
-    <meta name="description" content="Barbie: A fun and adventurous film following the iconic doll, Barbie, as she embarks on a journey of self-discovery and empowerment.">
+    <title>The Godfather - CINEBLOG</title>
+    <meta name="description" content="The Godfather: Francis Ford Coppola's classic crime drama about the powerful Corleone mafia family and the transformation of Michael Corleone from reluctant family outsider to ruthless mafia boss.">
 
+    <link rel="icon" type="image/x-icon" href="../../assert/img/favicon.ico" async>
     <meta name='viewport' content='width=device-width, initial-scale=1' async>
     <link rel='stylesheet' type='text/css' media='screen' href="../../assert/css/style.css" async>
     <script src="../../assert/js/allwork.js" async></script>
@@ -34,12 +34,12 @@ $movie_type = 'movie';
       <div class="slideshow-container">
 
           <div class="mySlides fade">
-            <img src="../../assert/img/coverpics/barbie.jpg" class="headimagem">
+            <img src="../../assert/img/coverpics2/thegodfather.jpg" class="headimagem">
             <div class="text">
-              <span class="headline">Barbie </span>
-              <p class="podidetails">2023   |   Comaedy/Fantasy    |    1h 54m</p>
-              <p class="details">Barbie and Ken are having the time of their lives in the colorful and seemingly perfect world of Barbie Land. However, when they get a chance to go to the real world, they soon discover the joys and perils of living among humans.</p>
-              <p class="cast">Ryan Gosling | Margot Robbie | Simu Liu</p>
+              <span class="headline">The Godfather</span>
+              <p class="podidetails">1972   |   Crime/Thriller    |    2h 55m</p>
+              <p class="details">Don Vito Corleone, head of a mafia family, decides to hand over his empire to his youngest son, Michael. However, his decision unintentionally puts the lives of his loved ones in grave danger.</p>
+              <p class="cast">Al Pacino| Marlon Brando | Talia Shire</p>
             </div>
             <br>
           </div>
@@ -54,67 +54,62 @@ $movie_type = 'movie';
         <h2 class="infotitle">Movie Information</h2>
         <h3 class="listdetails boldd align">Plot Summary</h2>
 
-        <p class="googleinfo">Barbie and Ken are having the time of their lives in the colorful and seemingly perfect world of Barbie Land. However, when they get a chance to go to the real world, they soon discover the joys and perils of living among humans.</p>
+        <p class="googleinfo">Don Vito Corleone, head of a mafia family, decides to hand over his empire to his youngest son, Michael. However, his decision unintentionally puts the lives of his loved ones in grave danger.</p>
         <ul>
-          <li class="listdetails"><b class="boldd">Release Date:</b> July 21, 2023</li>
-          <li class="listdetails"><b class="boldd">Genre:</b>Comedy & Fantasy</li>
-          <li class="listdetails"><b class="boldd">Director:</b>Greta Gerwig</li>
-          <li class="listdetails"><b class="boldd">Producer:</b>David Heyman, Margot Robbie</li>
-          <li class="listdetails"><b class="boldd">Box Office:</b>$1.4B</li>
-          <li class="listdetails"><b class="boldd">Duration:</b>1h 54m</li>
-          <li class="listdetails"><b class="boldd">Distributer:</b>Warner Bros. Pictures</li>
+          <li class="listdetails"><b class="boldd">Release Date:</b>March 24, 1972 </li>
+          <li class="listdetails"><b class="boldd">Genre:</b>Crime & Thriller</li>
+          <li class="listdetails"><b class="boldd">Director:</b>Francis Ford Coppola</li>
+          <li class="listdetails"><b class="boldd">Producer:</b>Albert S. Ruddy</li>
+          <li class="listdetails"><b class="boldd">Box Office:</b>$291M</li>
+          <li class="listdetails"><b class="boldd">Duration:</b>2h 55m</li>
+          <li class="listdetails"><b class="boldd">Distributer:</b>Paramount Pictures</li>
         </ul>
         <div class="castbox">
 
           <div class="castdit">
-            <img class="castimg" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Greta_Gerwig_at_Barbie_Movie_Reception_%28headshot%29.jpg/440px-Greta_Gerwig_at_Barbie_Movie_Reception_%28headshot%29.jpg">
-            <p class="castname">Greta Gerwig</p>
+            <img class="castimg" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Francis_Ford_Coppola_%2833906700778%29_%28cropped%29.jpg/440px-Francis_Ford_Coppola_%2833906700778%29_%28cropped%29.jpg">
+            <p class="castname">Francis Ford Coppola</p>
             <p class="role">Director</p>
           </div>
           <div class="castdit">
-            <img class="castimg" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/GoslingBFI081223_%2822_of_30%29_%2853388157347%29_%28cropped%29.jpg/440px-GoslingBFI081223_%2822_of_30%29_%2853388157347%29_%28cropped%29.jpg">
-            <p class="castname">Ryan Gosling</p>
-            <p class="role">Ken</p>
+            <img class="castimg" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Al_Pacino_2016_%2830401544240%29.jpg/440px-Al_Pacino_2016_%2830401544240%29.jpg">
+            <p class="castname">Al Pacino</p>
+            <p class="role">Michael Corleone</p>
           </div>
           <div class="castdit">
-            <img class="castimg" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Simu_Liu_by_Gage_Skidmore.jpg/440px-Simu_Liu_by_Gage_Skidmore.jpg">
-            <p class="castname">Simu Liu</p>
-            <p class="role">Ken</p>
+            <img class="castimg" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Marlon_Brando_publicity_for_One-Eyed_Jacks.png/440px-Marlon_Brando_publicity_for_One-Eyed_Jacks.png">
+            <p class="castname">Marlon Brando</p>
+            <p class="role">Vito Corleone</p>
           </div>
           <div class="castdit">
-            <img class="castimg" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Margot_Robbie_Vogue_Barbie_2023_03.jpg/440px-Margot_Robbie_Vogue_Barbie_2023_03.jpg">
-            <p class="castname">Margot Robbie</p>
-            <p class="role">Barbie</p>
+            <img class="castimg" src="https://upload.wikimedia.org/wikipedia/commons/c/cd/Talia_Shire_1976_edit.JPG">
+            <p class="castname">Talia Shire</p>
+            <p class="role">Connie Corleone</p>
           </div>
           <div class="castdit">
-            <img class="castimg" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Emma_Mackey_%282%29.jpg/440px-Emma_Mackey_%282%29.jpg">
-            <p class="castname">Emma Macjey</p>
-            <p class="role">barbie</p>
-          </div>
-          <div class="castdit">
-            <img class="castimg" src="https://upload.wikimedia.org/wikipedia/commons/c/c2/Will_Ferrell_2012.jpg">
-            <p class="castname">Will Ferrell</p>
-            <p class="role">Mattel CEO</p>
+            <img class="castimg" src="https://upload.wikimedia.org/wikipedia/en/e/eb/John_Cazale.jpg">
+            <p class="castname">John Cazale</p>
+            <p class="role">Fedro Corleone</p>
           </div>
         </div>
       </div>
-      
     </div>
     <div class="space"></div>
 
     <?php renderWatchlistButtons($movie_id, $movie_title, $movie_type); ?>
 
     <div class="movieratefinal">
-      <h2 class="infotitlefinal">BARBIE</h2>
-      <p class="infoshow">2023   |   Comedy/Fantasy    |    1h 54m</p>
+      <h2 class="infotitlefinal">The Godfather</h2>
+      <p class="infoshow">1972   |   Crime/Triller    |    2h 55m</p>
       <div class="box2">
         <div class="box3">
           <img src="../../assert/img/hydracastlogo.jpg" class="hyimg">
         </div>
-        <p class="bigratetext">9.0</p>
+        <p class="bigratetext">--</p>
       </div>
       
     </div>
+
     <div class="space"></div>
 
     <?php renderReviewSection($movie_id, $movie_title, $movie_type); ?>
@@ -149,10 +144,13 @@ $movie_type = 'movie';
             <td><img src="../../assert/img/hydracastlogo.jpg" class="ratinglogo">7.5</td>
             <td><a class="footlink" href="antman1.php">Ant Man 1</td></a>
           </tr>
+          <tr>
+            <td><img src="../../assert/img/hydracastlogo.jpg" class="ratinglogo">8.0</td>
+            <td><a class="footlink" href="thefallguy.php">The Fall Guy</td></a>
+          </tr>
         </table>
       </div>
       </div>
-      
     </div>
 <div class="space"></div>
 <div class="space"></div>

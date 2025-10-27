@@ -3,23 +3,23 @@ require_once __DIR__ . '/../../includes/session.php';
 require_once __DIR__ . '/../../includes/movie_helper.php';
 
 // Define movie details
-$movie_id = 'barbie';
-$movie_title = 'Barbie';
-$movie_type = 'movie';
+$movie_id = 'asphodel';
+$movie_title = 'Asphodel';
+$movie_type = 'short';
 ?>
 <!DOCTYPE html>
 <html>
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Barbie - CINEBLOG</title>
-    <link rel="icon" type="image/x-icon" href="../../assert/img/favicon.ico" async>
-    <meta name="description" content="Barbie: A fun and adventurous film following the iconic doll, Barbie, as she embarks on a journey of self-discovery and empowerment.">
+    <title>3 Idiotss - CINEBLOG</title>
+    <meta name="description" content="3 Idiots: A heartwarming and hilarious Bollywood film about three engineering students navigating college life, friendship, and personal dreams.">
 
+    <link rel="icon" type="image/x-icon" href="../../assert/img/favicon.ico" async>
     <meta name='viewport' content='width=device-width, initial-scale=1' async>
     <link rel='stylesheet' type='text/css' media='screen' href="../../assert/css/style.css" async>
     <script src="../../assert/js/allwork.js" async></script>
-    <script src="https://kit.fontawesome.com/4e00cb04a3.js" async crossorigin="anonymous"></script>
+    
     <link rel="preconnect" href="https://fonts.googleapis.com" async>
     <link rel="preconnect" href="https://fonts.gstatic.com" async crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,800;1,800&family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
@@ -34,12 +34,12 @@ $movie_type = 'movie';
       <div class="slideshow-container">
 
           <div class="mySlides fade">
-            <img src="../../assert/img/coverpics/barbie.jpg" class="headimagem">
+            <img src="../../assert/img/coverpics2/3idiots.jpg" class="headimagem">
             <div class="text">
-              <span class="headline">Barbie </span>
-              <p class="podidetails">2023   |   Comaedy/Fantasy    |    1h 54m</p>
-              <p class="details">Barbie and Ken are having the time of their lives in the colorful and seemingly perfect world of Barbie Land. However, when they get a chance to go to the real world, they soon discover the joys and perils of living among humans.</p>
-              <p class="cast">Ryan Gosling | Margot Robbie | Simu Liu</p>
+              <span class="headline">3 Idiots</span>
+              <p class="podidetails">2009   |   Comedy/Romance    |    2h 50m</p>
+              <p class="details"> In college, Farhan and Raju form a great bond with Rancho due to his refreshing outlook. Years later, a bet gives them a chance to look for their long-lost friend whose existence seems rather elusive.</p>
+              <p class="cast">Aamir Khan| Sharman Joshi | R. Madhavan</p>
             </div>
             <br>
           </div>
@@ -54,70 +54,66 @@ $movie_type = 'movie';
         <h2 class="infotitle">Movie Information</h2>
         <h3 class="listdetails boldd align">Plot Summary</h2>
 
-        <p class="googleinfo">Barbie and Ken are having the time of their lives in the colorful and seemingly perfect world of Barbie Land. However, when they get a chance to go to the real world, they soon discover the joys and perils of living among humans.</p>
+        <p class="googleinfo"> In college, Farhan and Raju form a great bond with Rancho due to his refreshing outlook. Years later, a bet gives them a chance to look for their long-lost friend whose existence seems rather elusive.</p>
         <ul>
-          <li class="listdetails"><b class="boldd">Release Date:</b> July 21, 2023</li>
-          <li class="listdetails"><b class="boldd">Genre:</b>Comedy & Fantasy</li>
-          <li class="listdetails"><b class="boldd">Director:</b>Greta Gerwig</li>
-          <li class="listdetails"><b class="boldd">Producer:</b>David Heyman, Margot Robbie</li>
-          <li class="listdetails"><b class="boldd">Box Office:</b>$1.4B</li>
-          <li class="listdetails"><b class="boldd">Duration:</b>1h 54m</li>
-          <li class="listdetails"><b class="boldd">Distributer:</b>Warner Bros. Pictures</li>
+          <li class="listdetails"><b class="boldd">Release Date:</b>Dec 25, 2009 </li>
+          <li class="listdetails"><b class="boldd">Genre:</b>Comedy & Romance</li>
+          <li class="listdetails"><b class="boldd">Director:</b>Rajkumar Hirani</li>
+          <li class="listdetails"><b class="boldd">Producer:</b>Vidhu Vinod Chopra</li>
+          <li class="listdetails"><b class="boldd">Box Office:</b>$48M</li>
+          <li class="listdetails"><b class="boldd">Duration:</b>2h 50m</li>
+          <li class="listdetails"><b class="boldd">Distributer:</b>	Reliance BIG Pictures</li>
         </ul>
         <div class="castbox">
 
           <div class="castdit">
-            <img class="castimg" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Greta_Gerwig_at_Barbie_Movie_Reception_%28headshot%29.jpg/440px-Greta_Gerwig_at_Barbie_Movie_Reception_%28headshot%29.jpg">
-            <p class="castname">Greta Gerwig</p>
+            <img class="castimg" src="https://upload.wikimedia.org/wikipedia/commons/4/44/Rajkumar_Hirani_2014.jpg">
+            <p class="castname">Rajkumar Hirani</p>
             <p class="role">Director</p>
           </div>
           <div class="castdit">
-            <img class="castimg" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/GoslingBFI081223_%2822_of_30%29_%2853388157347%29_%28cropped%29.jpg/440px-GoslingBFI081223_%2822_of_30%29_%2853388157347%29_%28cropped%29.jpg">
-            <p class="castname">Ryan Gosling</p>
-            <p class="role">Ken</p>
+            <img class="castimg" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Aamir_Khan_at_the_success_bash_of_Secret_Superstar.jpg/440px-Aamir_Khan_at_the_success_bash_of_Secret_Superstar.jpg">
+            <p class="castname">Aamir Khan</p>
+            <p class="role">Rancho</p>
           </div>
           <div class="castdit">
-            <img class="castimg" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Simu_Liu_by_Gage_Skidmore.jpg/440px-Simu_Liu_by_Gage_Skidmore.jpg">
-            <p class="castname">Simu Liu</p>
-            <p class="role">Ken</p>
+            <img class="castimg" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Sharman_Joshi_still3.jpg/440px-Sharman_Joshi_still3.jpg">
+            <p class="castname">Sharman Joshi</p>
+            <p class="role">Raju Rastogi</p>
           </div>
           <div class="castdit">
-            <img class="castimg" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Margot_Robbie_Vogue_Barbie_2023_03.jpg/440px-Margot_Robbie_Vogue_Barbie_2023_03.jpg">
-            <p class="castname">Margot Robbie</p>
-            <p class="role">Barbie</p>
+            <img class="castimg" src="https://upload.wikimedia.org/wikipedia/commons/c/cc/Madhavan_Saala_Khadoos_%28cropped%29.jpg">
+            <p class="castname">R. Madhavan</p>
+            <p class="role">Farhan Qureshi</p>
           </div>
           <div class="castdit">
-            <img class="castimg" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Emma_Mackey_%282%29.jpg/440px-Emma_Mackey_%282%29.jpg">
-            <p class="castname">Emma Macjey</p>
-            <p class="role">barbie</p>
-          </div>
-          <div class="castdit">
-            <img class="castimg" src="https://upload.wikimedia.org/wikipedia/commons/c/c2/Will_Ferrell_2012.jpg">
-            <p class="castname">Will Ferrell</p>
-            <p class="role">Mattel CEO</p>
+            <img class="castimg" src="https://upload.wikimedia.org/wikipedia/commons/2/29/Kareena_Kapoor_Khan_in_2023_%281%29_%28cropped%29.jpg">
+            <p class="castname">Kareena Kapoor</p>
+            <p class="role">Pia</p>
           </div>
         </div>
       </div>
-      
     </div>
+
     <div class="space"></div>
 
     <?php renderWatchlistButtons($movie_id, $movie_title, $movie_type); ?>
 
     <div class="movieratefinal">
-      <h2 class="infotitlefinal">BARBIE</h2>
-      <p class="infoshow">2023   |   Comedy/Fantasy    |    1h 54m</p>
+      <h2 class="infotitlefinal">3 Idiots</h2>
+      <p class="infoshow">2009   |   Comedy/Romance    |    2h 50m</p>
       <div class="box2">
         <div class="box3">
           <img src="../../assert/img/hydracastlogo.jpg" class="hyimg">
         </div>
-        <p class="bigratetext">9.0</p>
+        <p class="bigratetext">--</p>
       </div>
       
     </div>
-    <div class="space"></div>
-
+<div class="space"></div>
     <?php renderReviewSection($movie_id, $movie_title, $movie_type); ?>
+
+    <div class="space"></div>
 
     <div class="space"></div>
     <div class="box5">
@@ -148,6 +144,10 @@ $movie_type = 'movie';
           <tr>
             <td><img src="../../assert/img/hydracastlogo.jpg" class="ratinglogo">7.5</td>
             <td><a class="footlink" href="antman1.php">Ant Man 1</td></a>
+          </tr>
+          <tr>
+            <td><img src="../../assert/img/hydracastlogo.jpg" class="ratinglogo">8.0</td>
+            <td><a class="footlink" href="thefallguy.php">The Fall Guy</td></a>
           </tr>
         </table>
       </div>

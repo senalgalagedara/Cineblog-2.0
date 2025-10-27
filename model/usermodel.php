@@ -15,23 +15,43 @@ class usermodel {
     }
 
     public function register() {
-        $query = "INSERT INTO {$this->table} (username, useremail, password,cpassword) VALUES (username, useremail, password,cpassword)";
+        // Defensive: if DB connection failed, avoid calling prepare() and return false
+        if (!$this->conn) {
+            return false;
+        }
+        // Check if email already exists
+        $checkQuery = "SELECT userid FROM {$this->table} WHERE useremail = :useremail LIMIT 1";
+        $checkStmt = $this->conn->prepare($checkQuery);
+        $checkStmt->bindParam(":useremail", $this->useremail);
+        $checkStmt->execute();
+        
+        if ($checkStmt->rowCount() > 0) {
+            return 'email_exists';
+        }
+        
+        $query = "INSERT INTO {$this->table} (username, useremail, password, cpassword) VALUES (:username, :useremail, :password, :cpassword)";
         $stmt = $this->conn->prepare($query);
-        $this->password = password_hash($this->password, PASSWORD_BCRYPT);
+        
+        // Hash the password
+        $hashedPassword = password_hash($this->password, PASSWORD_BCRYPT);
 
-        $stmt->bindParam("username", $this->username);
-        $stmt->bindParam("useremail", $this->useremail);
-        $stmt->bindParam("password", $this->password);
-        $stmt->bindParam("5cpassword", $this->cpassword);
-
+        $stmt->bindParam(":username", $this->username);
+        $stmt->bindParam(":useremail", $this->useremail);
+        $stmt->bindParam(":password", $hashedPassword);
+        $stmt->bindParam(":cpassword", $this->cpassword);
 
         return $stmt->execute();
     }
 
     public function login() {
-        $query = "SELECT * FROM {$this->table} WHERE useremail = :useremail LIMIT 1";
+        // Defensive: if DB connection failed, avoid calling prepare() and return false
+        if (!$this->conn) {
+            return false;
+        }
+        // Support both email and username login
+        $query = "SELECT * FROM {$this->table} WHERE useremail = :identifier OR username = :identifier LIMIT 1";
         $stmt = $this->conn->prepare($query);
-        $stmt->bindParam(":useremail", $this->useremail);
+        $stmt->bindParam(":identifier", $this->useremail);
         $stmt->execute();
 
         if($stmt->rowCount() > 0) {

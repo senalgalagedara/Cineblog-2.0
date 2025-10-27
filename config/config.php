@@ -3,7 +3,8 @@ class config {
     private $host = "localhost";
     private $db_name = "movieblog";
     private $username = "root";
-    private $password = "1234";
+    // XAMPP typically uses an empty password for the root user. Update if your MySQL uses a different password.
+    private $password = "";
     public $conn;
 
     public function connect() {

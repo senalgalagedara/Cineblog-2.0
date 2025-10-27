@@ -3,8 +3,8 @@ require_once __DIR__ . '/../../includes/session.php';
 require_once __DIR__ . '/../../includes/movie_helper.php';
 
 // Define movie details
-$movie_id = 'barbie';
-$movie_title = 'Barbie';
+$movie_id = 'kungfupanda4';
+$movie_title = 'Kung Fu Panda 4';
 $movie_type = 'movie';
 ?>
 <!DOCTYPE html>
@@ -12,10 +12,10 @@ $movie_type = 'movie';
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Barbie - CINEBLOG</title>
-    <link rel="icon" type="image/x-icon" href="../../assert/img/favicon.ico" async>
-    <meta name="description" content="Barbie: A fun and adventurous film following the iconic doll, Barbie, as she embarks on a journey of self-discovery and empowerment.">
+    <title>Kung Fu Panda 4- CINEBLOG</title>
+    <meta name="description" content="Kung Fu Panda 4: Po returns for another exciting adventure, embracing his role as the Dragon Warrior and discovering new aspects of his destiny.">
 
+    <link rel="icon" type="image/x-icon" href="../../assert/img/favicon.ico" async>
     <meta name='viewport' content='width=device-width, initial-scale=1' async>
     <link rel='stylesheet' type='text/css' media='screen' href="../../assert/css/style.css" async>
     <script src="../../assert/js/allwork.js" async></script>
@@ -34,12 +34,12 @@ $movie_type = 'movie';
       <div class="slideshow-container">
 
           <div class="mySlides fade">
-            <img src="../../assert/img/coverpics/barbie.jpg" class="headimagem">
+            <img src="../../assert/img/coverpics2/kungfupanda4.jpg" class="headimagem">
             <div class="text">
-              <span class="headline">Barbie </span>
-              <p class="podidetails">2023   |   Comaedy/Fantasy    |    1h 54m</p>
-              <p class="details">Barbie and Ken are having the time of their lives in the colorful and seemingly perfect world of Barbie Land. However, when they get a chance to go to the real world, they soon discover the joys and perils of living among humans.</p>
-              <p class="cast">Ryan Gosling | Margot Robbie | Simu Liu</p>
+              <span class="headline">Kung Fu Panda 4 </span>
+              <p class="podidetails">2024   |   Comedy/Adventure    |    1h 34m</p>
+              <p class="details">Po must train a new warrior when he's chosen to become the spiritual leader of the Valley of Peace. However, when a powerful shape-shifting sorceress sets her eyes on his Staff of Wisdom, he suddenly realizes he's going to need some help.</p>
+              <p class="cast">Jack Black | Awkwafina | Bryan Cranston</p>
             </div>
             <br>
           </div>
@@ -54,67 +54,62 @@ $movie_type = 'movie';
         <h2 class="infotitle">Movie Information</h2>
         <h3 class="listdetails boldd align">Plot Summary</h2>
 
-        <p class="googleinfo">Barbie and Ken are having the time of their lives in the colorful and seemingly perfect world of Barbie Land. However, when they get a chance to go to the real world, they soon discover the joys and perils of living among humans.</p>
+        <p class="googleinfo">Po must train a new warrior when he's chosen to become the spiritual leader of the Valley of Peace. However, when a powerful shape-shifting sorceress sets her eyes on his Staff of Wisdom, he suddenly realizes he's going to need some help.</p>
         <ul>
-          <li class="listdetails"><b class="boldd">Release Date:</b> July 21, 2023</li>
-          <li class="listdetails"><b class="boldd">Genre:</b>Comedy & Fantasy</li>
-          <li class="listdetails"><b class="boldd">Director:</b>Greta Gerwig</li>
-          <li class="listdetails"><b class="boldd">Producer:</b>David Heyman, Margot Robbie</li>
-          <li class="listdetails"><b class="boldd">Box Office:</b>$1.4B</li>
-          <li class="listdetails"><b class="boldd">Duration:</b>1h 54m</li>
-          <li class="listdetails"><b class="boldd">Distributer:</b>Warner Bros. Pictures</li>
+          <li class="listdetails"><b class="boldd">Release Date:</b> March 8, 2024</li>
+          <li class="listdetails"><b class="boldd">Genre:</b>Comedy & Adventure</li>
+          <li class="listdetails"><b class="boldd">Director:</b>Mike Mitchell</li>
+          <li class="listdetails"><b class="boldd">Producer:</b>Rebecca Huntley</li>
+          <li class="listdetails"><b class="boldd">Box Office:</b>$537.4 M</li>
+          <li class="listdetails"><b class="boldd">Duration:</b>1h 34m</li>
+          <li class="listdetails"><b class="boldd">Distributer:</b>Universal Pictures</li>
         </ul>
         <div class="castbox">
 
           <div class="castdit">
-            <img class="castimg" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Greta_Gerwig_at_Barbie_Movie_Reception_%28headshot%29.jpg/440px-Greta_Gerwig_at_Barbie_Movie_Reception_%28headshot%29.jpg">
-            <p class="castname">Greta Gerwig</p>
+            <img class="castimg" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Mike_Mitchell_by_Gage_Skidmore.jpg/440px-Mike_Mitchell_by_Gage_Skidmore.jpg">
+            <p class="castname">Mike Mitchell</p>
             <p class="role">Director</p>
           </div>
           <div class="castdit">
-            <img class="castimg" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/GoslingBFI081223_%2822_of_30%29_%2853388157347%29_%28cropped%29.jpg/440px-GoslingBFI081223_%2822_of_30%29_%2853388157347%29_%28cropped%29.jpg">
-            <p class="castname">Ryan Gosling</p>
-            <p class="role">Ken</p>
+            <img class="castimg" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/2016_RiP_Tenacious_D_-_Jack_Black_-_by_2eight_-_8SC8891.jpg/440px-2016_RiP_Tenacious_D_-_Jack_Black_-_by_2eight_-_8SC8891.jpg">
+            <p class="castname">Jack Black</p>
+            <p class="role">Po</p>
           </div>
           <div class="castdit">
-            <img class="castimg" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Simu_Liu_by_Gage_Skidmore.jpg/440px-Simu_Liu_by_Gage_Skidmore.jpg">
-            <p class="castname">Simu Liu</p>
-            <p class="role">Ken</p>
+            <img class="castimg" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Awkwafina_%28cropped%29_2.jpg/440px-Awkwafina_%28cropped%29_2.jpg">
+            <p class="castname">Awkwafina</p>
+            <p class="role">Zhen</p>
           </div>
           <div class="castdit">
-            <img class="castimg" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Margot_Robbie_Vogue_Barbie_2023_03.jpg/440px-Margot_Robbie_Vogue_Barbie_2023_03.jpg">
-            <p class="castname">Margot Robbie</p>
-            <p class="role">Barbie</p>
+            <img class="castimg" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/BryanCranston2022.jpg/440px-BryanCranston2022.jpg">
+            <p class="castname">Bryan Cranston</p>
+            <p class="role">Li Shan</p>
           </div>
           <div class="castdit">
-            <img class="castimg" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Emma_Mackey_%282%29.jpg/440px-Emma_Mackey_%282%29.jpg">
-            <p class="castname">Emma Macjey</p>
-            <p class="role">barbie</p>
-          </div>
-          <div class="castdit">
-            <img class="castimg" src="https://upload.wikimedia.org/wikipedia/commons/c/c2/Will_Ferrell_2012.jpg">
-            <p class="castname">Will Ferrell</p>
-            <p class="role">Mattel CEO</p>
+            <img class="castimg" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Ke_Huy_Quan_at_the_White_House_%2852902390767%29_%28cropped%29.jpg/440px-Ke_Huy_Quan_at_the_White_House_%2852902390767%29_%28cropped%29.jpg">
+            <p class="castname">Ke Huy Quan</p>
+            <p class="role">Han</p>
           </div>
         </div>
       </div>
-      
     </div>
     <div class="space"></div>
 
     <?php renderWatchlistButtons($movie_id, $movie_title, $movie_type); ?>
 
     <div class="movieratefinal">
-      <h2 class="infotitlefinal">BARBIE</h2>
-      <p class="infoshow">2023   |   Comedy/Fantasy    |    1h 54m</p>
+      <h2 class="infotitlefinal">Kung Fu Panda 4</h2>
+      <p class="infoshow">2024   |   Comedy/Adventure    |    1h 34m</p>
       <div class="box2">
         <div class="box3">
           <img src="../../assert/img/hydracastlogo.jpg" class="hyimg">
         </div>
-        <p class="bigratetext">9.0</p>
+        <p class="bigratetext">--</p>
       </div>
       
     </div>
+
     <div class="space"></div>
 
     <?php renderReviewSection($movie_id, $movie_title, $movie_type); ?>
@@ -152,7 +147,6 @@ $movie_type = 'movie';
         </table>
       </div>
       </div>
-      
     </div>
 <div class="space"></div>
 <div class="space"></div>

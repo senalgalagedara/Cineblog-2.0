@@ -3,8 +3,8 @@ require_once __DIR__ . '/../../includes/session.php';
 require_once __DIR__ . '/../../includes/movie_helper.php';
 
 // Define movie details
-$movie_id = 'barbie';
-$movie_title = 'Barbie';
+$movie_id = 'ginnenupanseethala';
+$movie_title = 'Ginnenu Panseethala';
 $movie_type = 'movie';
 ?>
 <!DOCTYPE html>
@@ -12,10 +12,10 @@ $movie_type = 'movie';
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Barbie - CINEBLOG</title>
-    <link rel="icon" type="image/x-icon" href="../../assert/img/favicon.ico" async>
-    <meta name="description" content="Barbie: A fun and adventurous film following the iconic doll, Barbie, as she embarks on a journey of self-discovery and empowerment.">
+    <title>Ginnen Upan Seethala - CINEBLOG</title>
+    <meta name="description" content="Ginnen Upan Seethala: A powerful narrative that explores the intersection of personal sacrifice and societal change in a turbulent era.">
 
+    <link rel="icon" type="image/x-icon" href="../../assert/img/favicon.ico" async>
     <meta name='viewport' content='width=device-width, initial-scale=1' async>
     <link rel='stylesheet' type='text/css' media='screen' href="../../assert/css/style.css" async>
     <script src="../../assert/js/allwork.js" async></script>
@@ -34,12 +34,12 @@ $movie_type = 'movie';
       <div class="slideshow-container">
 
           <div class="mySlides fade">
-            <img src="../../assert/img/coverpics/barbie.jpg" class="headimagem">
+            <img src="../../assert/img/coverpics2/ginnenupanseethala.jpg" class="headimagem">
             <div class="text">
-              <span class="headline">Barbie </span>
-              <p class="podidetails">2023   |   Comaedy/Fantasy    |    1h 54m</p>
-              <p class="details">Barbie and Ken are having the time of their lives in the colorful and seemingly perfect world of Barbie Land. However, when they get a chance to go to the real world, they soon discover the joys and perils of living among humans.</p>
-              <p class="cast">Ryan Gosling | Margot Robbie | Simu Liu</p>
+              <span class="headline">Ginnen Upan Seethala</span>
+              <p class="podidetails">2018   |  Drama/Thriller   |   2h 30m</p>
+              <p class="details">Ginnen Upan Seethala is a 2019 Sinhala biographical film about Sri Lankan Marxist revolutionary Rohana Wijeweera directed by Anuruddha Jayasinghe</p>
+              <p class="cast">Kamal Addararachchi | Jagath Manuwarna | Sulochana Weerasinghe</p>
             </div>
             <br>
           </div>
@@ -54,64 +54,58 @@ $movie_type = 'movie';
         <h2 class="infotitle">Movie Information</h2>
         <h3 class="listdetails boldd align">Plot Summary</h2>
 
-        <p class="googleinfo">Barbie and Ken are having the time of their lives in the colorful and seemingly perfect world of Barbie Land. However, when they get a chance to go to the real world, they soon discover the joys and perils of living among humans.</p>
+        <p class="googleinfo">Ginnen Upan Seethala is a 2019 Sinhala biographical film about Sri Lankan Marxist revolutionary Rohana Wijeweera directed by Anuruddha Jayasinghe</p>
         <ul>
-          <li class="listdetails"><b class="boldd">Release Date:</b> July 21, 2023</li>
-          <li class="listdetails"><b class="boldd">Genre:</b>Comedy & Fantasy</li>
-          <li class="listdetails"><b class="boldd">Director:</b>Greta Gerwig</li>
-          <li class="listdetails"><b class="boldd">Producer:</b>David Heyman, Margot Robbie</li>
-          <li class="listdetails"><b class="boldd">Box Office:</b>$1.4B</li>
-          <li class="listdetails"><b class="boldd">Duration:</b>1h 54m</li>
-          <li class="listdetails"><b class="boldd">Distributer:</b>Warner Bros. Pictures</li>
+          <li class="listdetails"><b class="boldd">Release Date:</b>Sept 28, 2018</li>
+          <li class="listdetails"><b class="boldd">Genre:</b>Drama & Thriller</li>
+          <li class="listdetails"><b class="boldd">Director:</b>Anuruddha Jayasinghe</li>
+          <li class="listdetails"><b class="boldd">Producer:</b>Chamathka Peiris</li>
+          <li class="listdetails"><b class="boldd">Box Office:</b>600 LKR lakhs</li>
+          <li class="listdetails"><b class="boldd">Duration:</b>2h 30m</li>
+          <li class="listdetails"><b class="boldd">Distributer:</b>N/A</li>
         </ul>
         <div class="castbox">
 
           <div class="castdit">
-            <img class="castimg" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Greta_Gerwig_at_Barbie_Movie_Reception_%28headshot%29.jpg/440px-Greta_Gerwig_at_Barbie_Movie_Reception_%28headshot%29.jpg">
-            <p class="castname">Greta Gerwig</p>
+            <img class="castimg" src="https://images.mubicdn.net/images/cast_member/622022/cache-339509-1526688006/image-w856.jpg?size=800x">
+            <p class="castname">Anuruddha Jayasinghe</p>
             <p class="role">Director</p>
           </div>
           <div class="castdit">
-            <img class="castimg" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/GoslingBFI081223_%2822_of_30%29_%2853388157347%29_%28cropped%29.jpg/440px-GoslingBFI081223_%2822_of_30%29_%2853388157347%29_%28cropped%29.jpg">
-            <p class="castname">Ryan Gosling</p>
-            <p class="role">Ken</p>
+            <img class="castimg" src="https://lk-aps.bmscdn.com/Artist/955.jpg">
+            <p class="castname">Kamal Addararachchi</p>
+            <p class="role">Rohana Wijevieera</p>
           </div>
           <div class="castdit">
-            <img class="castimg" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Simu_Liu_by_Gage_Skidmore.jpg/440px-Simu_Liu_by_Gage_Skidmore.jpg">
-            <p class="castname">Simu Liu</p>
-            <p class="role">Ken</p>
+            <img class="castimg" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQcoG15wOgn28MKjLSbBAGSYcKj-5H2_FYqXVDnlS_ug&s">
+            <p class="castname">Jagath Manuwarna</p>
+            <p class="role">Upathissa Gamanayeke</p>
           </div>
           <div class="castdit">
-            <img class="castimg" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Margot_Robbie_Vogue_Barbie_2023_03.jpg/440px-Margot_Robbie_Vogue_Barbie_2023_03.jpg">
-            <p class="castname">Margot Robbie</p>
-            <p class="role">Barbie</p>
+            <img class="castimg" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOUnw7--j0oYA-RCsVByaTj-DKDJv1bt2xWd0VP5nJgg&s">
+            <p class="castname">Sulochana Weerasinghe</p>
+            <p class="role">Chithrangani Wijevieera</p>
           </div>
           <div class="castdit">
-            <img class="castimg" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Emma_Mackey_%282%29.jpg/440px-Emma_Mackey_%282%29.jpg">
-            <p class="castname">Emma Macjey</p>
-            <p class="role">barbie</p>
-          </div>
-          <div class="castdit">
-            <img class="castimg" src="https://upload.wikimedia.org/wikipedia/commons/c/c2/Will_Ferrell_2012.jpg">
-            <p class="castname">Will Ferrell</p>
-            <p class="role">Mattel CEO</p>
+            <img class="castimg" src="https://images.mubicdn.net/images/cast_member/562924/cache-864942-1679678660/image-w856.jpg">
+            <p class="castname">Priyantha Sirikumara</p>
+            <p class="role">Lional Bopage</p>
           </div>
         </div>
       </div>
-      
     </div>
     <div class="space"></div>
 
     <?php renderWatchlistButtons($movie_id, $movie_title, $movie_type); ?>
 
     <div class="movieratefinal">
-      <h2 class="infotitlefinal">BARBIE</h2>
-      <p class="infoshow">2023   |   Comedy/Fantasy    |    1h 54m</p>
+      <h2 class="infotitlefinal">Ginnen Upan Seethala</h2>
+      <p class="infoshow">2018   |  Drama/Thriller   |   2h 30m</p>
       <div class="box2">
         <div class="box3">
           <img src="../../assert/img/hydracastlogo.jpg" class="hyimg">
         </div>
-        <p class="bigratetext">9.0</p>
+        <p class="bigratetext">--</p>
       </div>
       
     </div>
@@ -149,10 +143,13 @@ $movie_type = 'movie';
             <td><img src="../../assert/img/hydracastlogo.jpg" class="ratinglogo">7.5</td>
             <td><a class="footlink" href="antman1.php">Ant Man 1</td></a>
           </tr>
+          <tr>
+            <td><img src="../../assert/img/hydracastlogo.jpg" class="ratinglogo">8.0</td>
+            <td><a class="footlink" href="thefallguy.php">The Fall Guy</td></a>
+          </tr>
         </table>
       </div>
       </div>
-      
     </div>
 <div class="space"></div>
 <div class="space"></div>

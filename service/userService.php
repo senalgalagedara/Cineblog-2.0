@@ -20,7 +20,8 @@ class userService {
 
     public function login($data) {
         $user = new usermodel($this->db);
-        $user->useremail = $data['useremail'];
+        // login_identifier can be either username or email
+        $user->useremail = $data['login_identifier'];
         $user->password = $data['password'];
 
         return $user->login();

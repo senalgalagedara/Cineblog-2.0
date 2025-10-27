@@ -3,8 +3,8 @@ require_once __DIR__ . '/../../includes/session.php';
 require_once __DIR__ . '/../../includes/movie_helper.php';
 
 // Define movie details
-$movie_id = 'barbie';
-$movie_title = 'Barbie';
+$movie_id = 'shangchi';
+$movie_title = 'Shang-Chi';
 $movie_type = 'movie';
 ?>
 <!DOCTYPE html>
@@ -12,10 +12,10 @@ $movie_type = 'movie';
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Barbie - CINEBLOG</title>
-    <link rel="icon" type="image/x-icon" href="../../assert/img/favicon.ico" async>
-    <meta name="description" content="Barbie: A fun and adventurous film following the iconic doll, Barbie, as she embarks on a journey of self-discovery and empowerment.">
+    <title>Shang-Chi and the Legend of the Ten Rings - CINEBLOG</title>
+    <meta name="description" content="Shang-Chi: Marvel's martial arts superhero film featuring Shang-Chi, who must confront the past he thought he left behind and face his father, the leader of the Ten Rings.">
 
+    <link rel="icon" type="image/x-icon" href="../../assert/img/favicon.ico" async>
     <meta name='viewport' content='width=device-width, initial-scale=1' async>
     <link rel='stylesheet' type='text/css' media='screen' href="../../assert/css/style.css" async>
     <script src="../../assert/js/allwork.js" async></script>
@@ -34,12 +34,12 @@ $movie_type = 'movie';
       <div class="slideshow-container">
 
           <div class="mySlides fade">
-            <img src="../../assert/img/coverpics/barbie.jpg" class="headimagem">
+            <img src="../../assert/img/coverpics/shang-chi-and-the-legend-of-the-ten-rings-shang-chi-simu-liu.jpg" class="headimagem">
             <div class="text">
-              <span class="headline">Barbie </span>
-              <p class="podidetails">2023   |   Comaedy/Fantasy    |    1h 54m</p>
-              <p class="details">Barbie and Ken are having the time of their lives in the colorful and seemingly perfect world of Barbie Land. However, when they get a chance to go to the real world, they soon discover the joys and perils of living among humans.</p>
-              <p class="cast">Ryan Gosling | Margot Robbie | Simu Liu</p>
+              <span class="headline">Shang-Chi and the Legend of the Ten Rings</span>
+              <p class="podidetails">2021   |   Action/Adventure    |    2h 12m</p>
+              <p class="details">Shang-Chi, a martial artist, lives a quiet life after he leaves his father and the shadowy Ten Rings organisation behind. Years later, he is forced to confront his past when the Ten Rings attack him.</p>
+              <p class="cast">Simu Liu | Tony Leung | Awkwafina</p>
             </div>
             <br>
           </div>
@@ -54,67 +54,63 @@ $movie_type = 'movie';
         <h2 class="infotitle">Movie Information</h2>
         <h3 class="listdetails boldd align">Plot Summary</h2>
 
-        <p class="googleinfo">Barbie and Ken are having the time of their lives in the colorful and seemingly perfect world of Barbie Land. However, when they get a chance to go to the real world, they soon discover the joys and perils of living among humans.</p>
+        <p class="googleinfo">Shang-Chi, a martial artist, lives a quiet life after he leaves his father and the shadowy Ten Rings organisation behind. Years later, he is forced to confront his past when the Ten Rings attack him.</p>
         <ul>
-          <li class="listdetails"><b class="boldd">Release Date:</b> July 21, 2023</li>
-          <li class="listdetails"><b class="boldd">Genre:</b>Comedy & Fantasy</li>
-          <li class="listdetails"><b class="boldd">Director:</b>Greta Gerwig</li>
-          <li class="listdetails"><b class="boldd">Producer:</b>David Heyman, Margot Robbie</li>
-          <li class="listdetails"><b class="boldd">Box Office:</b>$1.4B</li>
-          <li class="listdetails"><b class="boldd">Duration:</b>1h 54m</li>
-          <li class="listdetails"><b class="boldd">Distributer:</b>Warner Bros. Pictures</li>
+          <li class="listdetails"><b class="boldd">Release Date:</b> Sept 2, 2021</li>
+          <li class="listdetails"><b class="boldd">Genre:</b>Action & Adventure</li>
+          <li class="listdetails"><b class="boldd">Director:</b>Destin Daniel Cretton</li>
+          <li class="listdetails"><b class="boldd">Producer:</b>Kevin Feige,Jonathan Schwartz</li>
+          <li class="listdetails"><b class="boldd">Box Office:</b>$432M</li>
+          <li class="listdetails"><b class="boldd">Duration:</b>2h 12m</li>
+          <li class="listdetails"><b class="boldd">Distributer:</b>Walt Disney Studios</li>
         </ul>
         <div class="castbox">
 
           <div class="castdit">
-            <img class="castimg" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Greta_Gerwig_at_Barbie_Movie_Reception_%28headshot%29.jpg/440px-Greta_Gerwig_at_Barbie_Movie_Reception_%28headshot%29.jpg">
-            <p class="castname">Greta Gerwig</p>
+            <img class="castimg" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Destin_Daniel_Cretton_by_Gage_Skidmore.jpg/440px-Destin_Daniel_Cretton_by_Gage_Skidmore.jpg">
+            <p class="castname">Destin Daniel</p>
             <p class="role">Director</p>
           </div>
           <div class="castdit">
-            <img class="castimg" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/GoslingBFI081223_%2822_of_30%29_%2853388157347%29_%28cropped%29.jpg/440px-GoslingBFI081223_%2822_of_30%29_%2853388157347%29_%28cropped%29.jpg">
-            <p class="castname">Ryan Gosling</p>
-            <p class="role">Ken</p>
-          </div>
-          <div class="castdit">
             <img class="castimg" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Simu_Liu_by_Gage_Skidmore.jpg/440px-Simu_Liu_by_Gage_Skidmore.jpg">
-            <p class="castname">Simu Liu</p>
-            <p class="role">Ken</p>
+            <p class="castname">Simu-Liu</p>
+            <p class="role">Shang-Chi</p>
           </div>
           <div class="castdit">
-            <img class="castimg" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Margot_Robbie_Vogue_Barbie_2023_03.jpg/440px-Margot_Robbie_Vogue_Barbie_2023_03.jpg">
-            <p class="castname">Margot Robbie</p>
-            <p class="role">Barbie</p>
+            <img class="castimg" src="https://upload.wikimedia.org/wikipedia/commons/3/37/Tony_Leung_%28cropped%29.jpg">
+            <p class="castname">Tony Leung</p>
+            <p class="role">Xu Wenwu</p>
           </div>
           <div class="castdit">
-            <img class="castimg" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Emma_Mackey_%282%29.jpg/440px-Emma_Mackey_%282%29.jpg">
-            <p class="castname">Emma Macjey</p>
-            <p class="role">barbie</p>
+            <img class="castimg" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Awkwafina%2C_2018_%28cropped%29.jpg/440px-Awkwafina%2C_2018_%28cropped%29.jpg">
+            <p class="castname">Awkwafina</p>
+            <p class="role">Katy</p>
           </div>
           <div class="castdit">
-            <img class="castimg" src="https://upload.wikimedia.org/wikipedia/commons/c/c2/Will_Ferrell_2012.jpg">
-            <p class="castname">Will Ferrell</p>
-            <p class="role">Mattel CEO</p>
+            <img class="castimg" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Michelle_Yeoh_2015.jpg/440px-Michelle_Yeoh_2015.jpg">
+            <p class="castname">Michelle Yeoh</p>
+            <p class="role">Ying Nan</p>
           </div>
         </div>
       </div>
-      
     </div>
+    
     <div class="space"></div>
 
     <?php renderWatchlistButtons($movie_id, $movie_title, $movie_type); ?>
 
     <div class="movieratefinal">
-      <h2 class="infotitlefinal">BARBIE</h2>
-      <p class="infoshow">2023   |   Comedy/Fantasy    |    1h 54m</p>
+      <h2 class="infotitlefinal">SHANG-CHI and the LEGEND of the TEN RINGS</h2>
+      <p class="infoshow">2021   |   Action/Adventure    |    2h 12m</p>
       <div class="box2">
         <div class="box3">
           <img src="../../assert/img/hydracastlogo.jpg" class="hyimg">
         </div>
-        <p class="bigratetext">9.0</p>
+        <p class="bigratetext">7.0</p>
       </div>
       
     </div>
+
     <div class="space"></div>
 
     <?php renderReviewSection($movie_id, $movie_title, $movie_type); ?>
@@ -152,7 +148,6 @@ $movie_type = 'movie';
         </table>
       </div>
       </div>
-      
     </div>
 <div class="space"></div>
 <div class="space"></div>

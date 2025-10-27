@@ -1,0 +1,492 @@
+<?php require_once __DIR__ . '/includes/session.php'; ?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>CINEBLOG</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Cineblog.lankanblog is a  website about movie reviews, tv show/series reviews and anime reviews">
+
+    <link rel='stylesheet' type='text/css' media='screen' href='assert/css/style.css' async>
+    <link rel='stylesheet' type='text/css' media='screen' href='assert/css/mob_style.css' async>
+
+    <link rel="icon" type="image/x-icon" href="assert/img/favicon.ico" async>
+    
+    <script src="https://kit.fontawesome.com/4e00cb04a3.js"  async crossorigin="anonymous"></script>
+    <link rel="preconnect" async href="https://fonts.googleapis.com">
+    <link rel="preconnect" async href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,800;1,800&family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Silkscreen&display=swap" rel="stylesheet" async>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap" rel="stylesheet" async>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@100..900&display=swap" rel="stylesheet" async>
+
+    <script>
+    </script>
+</head>
+<body>
+
+    <?php include __DIR__ . '/includes/navbar.php'; ?>
+   
+
+      <header class="adoo">
+        <div class="slideshow-container">
+
+            
+            
+            <div class="mySlides fade">
+              <img src="assert/img/coverpics/avengers1.jpg" alt="Avangers" class="headimage">
+              <div class="text">
+                <span class="headline">The Avengers</span>
+                <p class="podidetails">2012   |   Action/Fantasy   |    2h 23m</p>
+                <p class="details" >S.H.I.E.L.D. leader Nick Fury is compelled to launch the Avengers programme when Loki poses a threat to planet Earth. But the superheroes must learn to work together if they are to stop him in time.</p>
+                <p class="cast">Robert Downey Jr. | Scarlett Johansson | Chris Evans</p>
+              </div>
+            </div>
+            
+            <div class="mySlides fade">
+              <img src="assert/img/coverpics/eternals1.webp" alt="Eternals" class="headimage">
+              <div class="text">
+                <span class="headline">Eternals</span>
+                <p class="podidetails">2021   |   Action/Fantasy   |    2h 37m</p>
+                <p class="details">The Eternals, a race of immortal beings with superhuman powers who have secretly lived on Earth for thousands of years, reunite to battle the evil Deviants.</p>
+                <p class="cast">Angelina Jolie | Barry Keoghan | Gemma Chan</p>
+              </div>
+            </div>
+
+            <div class="mySlides fade">
+                <img src="assert/img/coverpics/jhon wick1.webp" alt="John wick" class="headimage">
+                <div class="text">
+                  <span class="headline">John Wick: Chapter 4</span>
+                  <p class="podidetails">2023   |   Action/Thriller   |    2h 49m</p>
+                  <p class="details">With the price on his head ever increasing, legendary hit man John Wick takes his fight against the High Table global as he seeks out the most powerful players in the underworld, from New York to Paris to Japan to Berlin.</p>
+                  <p class="cast">Keanu Reeves | Bill Skarsgård | Donnie Yen</p>
+                </div>
+              </div>
+            
+            <div class="mySlides fade">
+                <img src="assert/img/coverpics/moon knight1.webp" alt="moon knight" class="headimage">
+                <div class="text">
+                  <span class="headline">Moon Knight</span>
+                  <p class="podidetails">2022   |   Action   |    1 season</p>
+                  <p class="details">Steven Grant and mercenary Marc Spector investigate the mysteries of the Egyptian gods from inside the same body.</p>
+                  <p class="cast">Oscar Isaac | May Calamawy | Ethan Hawke</p>
+                </div>
+              </div>
+
+            <div class="mySlides fade">
+                <img src="assert/img/coverpics//the boys1.jpg" alt="the boys" class="headimage">
+                <div class="text">
+                  <span class="headline">The Boys</span>
+                  <p class="podidetails">2019   |   Drama   |    3 seasons</p>
+                  <p class="details">Superheroes are often as popular as celebrities, as influential as politicians, and sometimes even as revered as gods. But that's when they're using their powers for good. What happens when the heroes go rogue and start abusing their powers?</p>
+                  <p class="cast">Antony Starr | Karl Urban | Jack Quaid</p>
+                </div>
+              </div>
+
+            </div>
+            <br>
+            
+            <div style="text-align:center">
+              <span class="dot"></span> 
+              <span class="dot"></span> 
+              <span class="dot"></span> 
+              <span class="dot"></span> 
+              <span class="dot"></span> 
+              <span class="dot"></span>
+            </div>
+          
+      </header>
+      <button onclick="topFunction()" id="myBtn" title="Go to top">^</button>
+
+      <script>
+      let mybutton = document.getElementById("myBtn");
+      window.onscroll = function() {scrollFunction()};
+      function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+      </script>
+      
+        <div id="cookiePopup" class="hide">
+          <p class="cookieHeading">We use cookies.</p>
+          <p style="color: white;">
+            We use cookies to ensure that we give you the best experience on our website.<a href="htmlfiles/privacy policy.html">Cookie Policy & Privacy.</a>
+          </p>
+          <button id="acceptCookie" class="acceptButton">Allow</button>
+        </div>
+     
+        <script src="js/cookies.js"></script>
+      <div class="ado">
+
+        <div class="space"></div>
+
+        
+
+        <div class="titlebox">
+
+          <div class="title2">
+            <h1 class="headtitle">MOVIES</h1>
+            <a href="movies.php" class="link">View all</a>
+          </div>
+          
+          
+        
+
+            <div class="boxes" id="containerr2">
+
+              <button id="slide3" class="buttonslideright" type="button">></button>
+              <button id="slide4" class="buttonslideleft" type="button"><</button>
+           
+
+              <a href="revs/movie_rev/deadpoolwolverine.php"><div class="box">
+                <img src="assert/img/poster/deadpool_wolverine-p1616061.webp" alt="deadpool_wolverine-p1616061"  class="boximg">
+                <p class="moviename">Deadpool & Wolverine</p>
+                <div class="rating">
+                  <img src="assert/img/hydracastlogo.jpg" alt="logo" class="ratinglogo">
+                  <p class="ratetext">N/A</p>
+                </div>
+                <button class="readmorebtn">Read More</button>
+              </div></a>
+
+                <a href="revs/movie_rev/thefallguy.php"><div class="box">
+                    <img src="assert/img/poster/the_fall_guy-p1615501.jpg" alt="the_fall_guy-p1615501"  class="boximg">
+                    <p class="moviename">The Fall Guy</p>
+                    <div class="rating">
+                      <img src="assert/img/hydracastlogo.jpg"  alt="logo"class="ratinglogo">
+                      <p class="ratetext">8.0</p>
+                    </div>
+                    <button class="readmorebtn">Read More</button>
+                  </div></a>
+
+                <a href="revs/movie_rev/dunepart2.php"><div class="box">
+                    <img src="assert/img/poster/dune2.jpg" alt="dune2"  class="boximg">
+                    <p class="moviename">DUNE: Part 2</p>
+                    <div class="rating">
+                      <img src="assert/img/hydracastlogo.jpg"   alt="logo" class="ratinglogo">
+                      <p class="ratetext">9.0</p>
+                    </div>
+                    <button class="readmorebtn">Read More</button>
+                  </div></a>
+
+                  <a href="revs/movie_rev/johnwick4.php"><div class="box">
+                    <img src="assert/img/poster/johnwick_4.jpg" alt="johnwick4" class="boximg">
+                    <p class="moviename">John Wick 4</p>
+                    <div class="rating">
+                      <img src="assert/img/hydracastlogo.jpg"  alt="logo" class="ratinglogo">
+                      <p class="ratetext">8.5</p>
+                    </div>
+                    <button class="readmorebtn">Read More</button>
+                 </div></a>
+                
+                 <a href="revs/movie_rev/fightclub.php"><div class="box">
+                  <img src="assert/img/poster/fight_club-p1610838.jpg" alt="fight club"  class="boximg">
+                  <p class="moviename">Fight Club</p>
+                  <div class="rating">
+                    <img src="assert/img/hydracastlogo.jpg"  alt="logo" class="ratinglogo">
+                    <p class="ratetext">9.5</p>
+                  </div>
+                  <button class="readmorebtn">Read More</button>
+                </div></a>
+
+                <a href="revs/movie_rev/thewolfofwallstreet.php"><div class="box">
+                  <img src="assert/img/poster/thewolfofwallstreet.jpg" alt="Wolf of the wall Street"  class="boximg">
+                  <p class="moviename">The Wolf Of Wall Street</p>
+                  <div class="rating">
+                    <img src="assert/img/hydracastlogo.jpg"  alt="logo" class="ratinglogo">
+                    <p class="ratetext">9.0</p>
+                  </div>
+                  <button class="readmorebtn">Read More</button>
+                </div></a>
+
+                <a href="revs/movie_rev/shangchi.php"><div class="box">
+                  <img src="assert/img/poster/shang_chi_and_the_legend_of_the_ten_rings.webp"  alt="shang_chi_and_the_legend_of_the_ten_rings" class="boximg">
+                  <p class="moviename">Shang-Chi and the legend of the ten rings</p>
+                  <div class="rating">
+                    <img src="assert/img/hydracastlogo.jpg"  alt="logo" class="ratinglogo">
+                    <p class="ratetext">7.0</p>
+                  </div>
+                  <button class="readmorebtn">Read More</button>
+                </div></a>
+
+                <a href="revs/movie_rev/bullettrain.php"><div class="box">
+                  <img src="assert/img/poster/bullet_train.webp" alt="bullet_train"  class="boximg">
+                  <p class="moviename">Bullet Train</p>
+                  <div class="rating">
+                    <img src="assert/img/hydracastlogo.jpg"  alt="logo" class="ratinglogo">
+                    <p class="ratetext">9.0</p>
+                  </div>
+                  <button class="readmorebtn">Read More</button>
+                </div></a>
+
+                <a href="revs/movie_rev/antman1.php"><div class="box">
+                  <img src="assert/img/poster/ant_man-2015.jpg" alt="ant_man-2015" class="boximg">
+                  <p class="moviename">Ant man</p>
+                  <div class="rating">
+                    <img src="assert/img/hydracastlogo.jpg"   alt="logo" class="ratinglogo">
+                    <p class="ratetext">7.5</p>
+                  </div>
+                  <button class="readmorebtn">Read More</button>
+                </div></a>
+            </div>
+        </div>
+
+        <div class="space"></div>
+
+        <div class="titlebox">
+
+          <div class="title2">
+            <h1 class="headtitle">T-SERIES</h1>
+            <a href="tseries.php" class="link">View all</a>
+          </div>
+
+              <div class="boxes" id="containerr3">
+                <button id="slide5" class="buttonslideright" type="button">></button>
+                <button id="slide6" class="buttonslideleft" type="button"><</button>
+          
+
+              <a href="revs/series_rev/breakingbad.php"><div class="box">
+                    <img src="assert/img/poster/breaking_bad.jpg" alt="breaking bad" class="boximg">
+                    <p class="moviename">Breaking Bad</p>
+                    <div class="rating">
+                      <img src="assert/img/hydracastlogo.jpg"  alt="logo" class="ratinglogo">
+                      <p class="ratetext">9.5</p>
+                    </div>
+                    <button class="readmorebtn">Read More</button>
+                  </div></a>
+
+                  <a href="revs/series_rev/moneyheist.php"><div class="box">
+                    <img src="assert/img/poster/la_casa_de_papel.webp" alt="moneyheist" class="boximg">
+                    <p class="moviename">La Casa de Pepel - Money Heist</p>
+                    <div class="rating">
+                      <img src="assert/img/hydracastlogo.jpg"  alt="logo" class="ratinglogo">
+                      <p class="ratetext">7.0</p>
+                    </div>
+                    <button class="readmorebtn">Read More</button>
+                  </div></a>
+
+                  <a href="revs/series_rev/gameofthrones.php"><div class="box">
+                    <img src="assert/img/poster/game_of_thrones.jpg" alt="game_of_thrones" class="boximg">
+                    <p class="moviename">Game of Thrones</p>
+                    <div class="rating">
+                      <img src="assert/img/hydracastlogo.jpg"  alt="logo" class="ratinglogo">
+                      <p class="ratetext">9.0</p>
+                    </div>
+                    <button class="readmorebtn">Read More</button>
+                  </div></a>
+
+                  <a href="revs/series_rev/peacemaker.php"><div class="box">
+                    <img src="assert/img/poster/peacemaker.webp" alt="peacemaker" class="boximg">
+                    <p class="moviename">Peacemaker</p>
+                    <div class="rating">
+                      <img src="assert/img/hydracastlogo.jpg"  alt="logo" class="ratinglogo">
+                      <p class="ratetext">9.1</p>
+                    </div>
+                    <button class="readmorebtn">Read More</button>
+                  </div></a>
+
+                  <a href="revs/series_rev/loki.php"><div class="box">
+                    <img src="assert/img/poster/loki.webp" alt="loki" class="boximg">
+                    <p class="moviename">Loki</p>
+                    <div class="rating">
+                      <img src="assert/img/hydracastlogo.jpg"  alt="logo" class="ratinglogo">
+                      <p class="ratetext">9.5</p>
+                    </div>
+                    <button class="readmorebtn">Read More</button>
+                  </div></a>
+
+                  <a href="revs/series_rev/prisonbreak.php"><div class="box">
+                    <img src="assert/img/poster/prisonbreak.jpg" alt="prisonbreak" class="boximg">
+                    <p class="moviename">Prison Break</p>
+                    <div class="rating">
+                      <img src="assert/img/hydracastlogo.jpg"  alt="logo" class="ratinglogo">
+                      <p class="ratetext">7.0</p>
+                    </div>
+                    <button class="readmorebtn">Read More</button>
+                  </div></a>
+
+              </div>
+        </div>
+
+        <div class="space"></div>
+
+          <div class="titlebox">
+            <div class="title2">
+            <h1 class="headtitle">ANIME</h1>
+            <a href="anime.php" class="link">View all</a>
+          </div>
+
+            <div class="boxes" id="containerr4">
+              <button id="slide7" class="buttonslideright" type="button">></button>
+              <button id="slide8" class="buttonslideleft" type="button"><</button>
+            
+
+                <a href="revs/anime_rev/naruto.php"><div class="box">
+                <img src="assert/img/poster/naruto.webp" alt="naruto" class="boximg">
+                <p class="moviename">Naruto</p>
+                <div class="rating">
+                  <img src="assert/img/hydracastlogo.jpg"  alt="logo" class="ratinglogo">
+                  <p class="ratetext">9.0</p>
+                </div>
+                <button class="readmorebtn">Read More</button>
+              </div></a>
+
+              <a href="revs/anime_rev/attackontitan.php"><div class="box">
+                <img src="assert/img/poster/attck_on_titan.webp" alt="attackontitan" class="boximg">
+                <p class="moviename">Shingeki no kyojin</p>
+                <div class="rating">
+                  <img src="assert/img/hydracastlogo.jpg"  alt="logo" class="ratinglogo">
+                  <p class="ratetext">9.5</p>
+                </div>
+                <button class="readmorebtn">Read More</button>
+              </div></a>
+
+              <a href="revs/anime_rev/onepiece.php"><div class="box">
+                <img src="assert/img/poster/one_piece.jpg" alt="one_piece" class="boximg">
+                <p class="moviename">One Piece</p>
+                <div class="rating">
+                  <img src="assert/img/hydracastlogo.jpg"  alt="logo" class="ratinglogo">
+                  <p class="ratetext">9.5</p>
+                </div>
+                <button class="readmorebtn">Read More</button>
+              </div></a>
+
+              <a href="revs/anime_rev/deathnote.php"><div class="box">
+                <img src="assert/img/poster/death_note.webp" alt="one piece" class="boximg">
+                <p class="moviename">Death Note</p>
+                <div class="rating">
+                  <img src="assert/img/hydracastlogo.jpg"  alt="logo" class="ratinglogo">
+                  <p class="ratetext">9.0</p>
+                </div>
+                <button class="readmorebtn">Read More</button>
+              </div></a>
+
+              <a href="revs/anime_rev/yourname.php"><div class="box">
+                <img src="assert/img/poster/yourname.jpg" alt="your name" class="boximg">
+                <p class="moviename">Kimi no na wa - Your Name</p>
+                <div class="rating">
+                  <img src="assert/img/hydracastlogo.jpg"  alt="logo" class="ratinglogo">
+                  <p class="ratetext">9.0</p>
+                </div>
+                <button class="readmorebtn">Read More</button>
+              </div></a>
+
+              <a href="revs/anime_rev/spyfamily.php"><div class="box">
+                <img src="assert/img/poster/spyfamily.webp" alt="spyxfamily" class="boximg">
+                <p class="moviename">Spy × Family</p>
+                <div class="rating">
+                  <img src="assert/img/hydracastlogo.jpg"  alt="logo" class="ratinglogo">
+                  <p class="ratetext">8.0</p>
+                </div>
+                <button class="readmorebtn">Read More</button>
+              </div></a>
+          </div>
+        </div>
+        <div class="space"></div>
+        
+        <div class="titlebox">
+
+          <div class="title2">
+            <h1 class="headtitle">Short Movies</h1>
+     
+          </div>
+
+              <div class="boxes">
+                <a href="revs/shortmovies/thelastmonk.php"><div class="box"  style="cursor:not-allowed !important;">
+                  <img src="https://media.themoviedb.org/t/p/w600_and_h900_bestv2/gUyYKzVUZKZW7KQmzK1uEdwkpFj.jpg"  alt="the last monk" class="boximg">
+                  <p class="moviename">The Last Monk (2024)</p>
+                  <button class="readmorebtn">Read More</button>
+                </div></a> 
+                  <a href="revs/shortmovies/her.php"><div class="box" style="cursor:not-allowed !important;">
+                    <img src="https://media.themoviedb.org/t/p/w600_and_h900_bestv2/8VLXImkjSA0Zrz2PRSXpaGQBRCT.jpg"  alt="her by nayanakantha" class="boximg">
+                    <p class="moviename">Her (2024)</p>
+                    <button class="readmorebtn">Read More</button>
+                  </div></a>   
+                <a href="revs/shortmovies/Asphodel.php"><div class="box" style="cursor:not-allowed !important;">
+                  <img src="https://media.themoviedb.org/t/p/w600_and_h900_bestv2/kKvpMDcdDnILKEZqtYF48cNxodl.jpg"  alt="asphodel" class="boximg">
+                  <p class="moviename">Asphodel (2023)</p>
+                  <button class="readmorebtn">Read More</button>
+                </div></a>   
+              
+                <button onclick="document.getElementById('id03').style.display='block'" class="submitreview blackbox"><p class="btnnnn">+</p>Add Your Movie</button>
+            </div>
+        </div>
+        <div id="id03" class="modal">
+          <div class="modal-content">
+            <div class="flexbtnwthin">
+            <h1 class="adrevwin">Add Your Movie</h1>
+            <div onclick="document.getElementById('id03').style.display='none'" class="closebtn" title="Close Modal">&times;</div>
+            </div>
+            <form action="https://api.web3forms.com/submit" method="POST">
+        
+              <input type="hidden" name="access_key" value="914c2383-ea53-4bfb-ae29-92ba2418e28a">
+        
+              <h3 class="usernamewrite">Your name:</h3>
+              <input type="text" name="name" class="username" placeholder="Enter your name..." required>
+              <br>
+              <h3 class="usernamewrite">Email:</h3>
+              <input type="email" name="email" class="email" placeholder="Enter your email..." required>
+              <br>
+              <h3 class="usernamewrite">Review</h3>
+              <textarea name="message" class="textareaa" rows="10" placeholder="Send details about your short movie and a way to contact you.(Whatsapp/social media)" required></textarea>
+            
+              <div class="h-captcha capecha" data-captcha="true"></div>
+              <script src="https://web3forms.com/client/script.js"  async defer></script>
+            
+              <button type="submit" class="submitrevieww">Submit</button>
+            <br><br>
+            </form>
+            </div>
+          </div>
+        </div>
+        <script>
+          const submitButton = document.getElementById('submit-review');
+          submitButton.addEventListener('click', (e) => {
+            const username = document.getElementById('username').value;
+            const email = document.getElementById('email').value;
+            const review = document.getElementById('review').value;
+         });
+         var modal = document.getElementById('id03');
+         window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+        </script>
+
+      <svg class="test6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path fill="#000000" fill-opacity="1" d="M0,256L40,234.7C80,213,160,171,240,181.3C320,192,400,256,480,240C560,224,640,128,720,128C800,128,880,224,960,250.7C1040,277,1120,235,1200,229.3C1280,224,1360,256,1400,272L1440,288L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z">
+      </path>
+      </svg> 
+      <?php include __DIR__ . '/includes/footer.php'; ?>
+      <script>
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 8000); // Change image every 8 seconds
+}
+        </script>
+        <script src="js/scrollleftright.js"></script>
+</body>
+</html>
