@@ -64,17 +64,78 @@ class usermodel {
     }
 
     public function getUserById($id) {
-        $query = "SELECT userid, username, useremail FROM {$this->table} WHERE userid = :userid";
+        $query = "SELECT userid, username, useremail, avatar, avatar_mime, avatar_size, bio, favorite_actor, favorite_actress, favorite_director, top5_movies FROM {$this->table} WHERE userid = :userid";
         $stmt = $this->conn->prepare($query);
         $stmt->bindParam(":userid", $id);
         $stmt->execute();
         return $stmt->fetch(PDO::FETCH_ASSOC);
     }
 
+    public function updateAvatar($userid, $blob, $mime, $size) {
+        // Ensure avatar columns exist — if not, attempt to add them (helps when migration wasn't run)
+        try {
+            $colCheckStmt = $this->conn->query("SHOW COLUMNS FROM {$this->table} LIKE 'avatar'");
+            $colExists = ($colCheckStmt && $colCheckStmt->rowCount() > 0);
+        } catch (PDOException $e) {
+            $colExists = false;
+        }
+
+        if (!$colExists) {
+            try {
+                $alter = "ALTER TABLE {$this->table} 
+                          ADD COLUMN avatar MEDIUMBLOB NULL AFTER cpassword,
+                          ADD COLUMN avatar_mime VARCHAR(50) NULL AFTER avatar,
+                          ADD COLUMN avatar_size INT NULL AFTER avatar_mime";
+                $this->conn->exec($alter);
+            } catch (PDOException $e) {
+                // If alter fails, return false so caller can handle it
+                return false;
+            }
+        }
+
+        $query = "UPDATE {$this->table} SET avatar = :avatar, avatar_mime = :avatar_mime, avatar_size = :avatar_size WHERE userid = :userid";
+        $stmt = $this->conn->prepare($query);
+        $stmt->bindParam(":avatar", $blob, PDO::PARAM_LOB);
+        $stmt->bindParam(":avatar_mime", $mime);
+        $stmt->bindParam(":avatar_size", $size);
+        $stmt->bindParam(":userid", $userid);
+        try {
+            return $stmt->execute();
+        } catch (PDOException $e) {
+            return false;
+        }
+    }
+
     public function deleteUser($id) {
         $query = "DELETE FROM {$this->table} WHERE userid = :userid";
         $stmt = $this->conn->prepare($query);
         $stmt->bindParam(":userid", $id);
+        return $stmt->execute();
+    }
+
+    public function updateBio($userid, $bio) {
+        $query = "UPDATE {$this->table} SET bio = :bio WHERE userid = :userid";
+        $stmt = $this->conn->prepare($query);
+        $stmt->bindParam(":bio", $bio);
+        $stmt->bindParam(":userid", $userid);
+        return $stmt->execute();
+    }
+
+    public function updateFavorites($userid, $actor, $actress, $director) {
+        $query = "UPDATE {$this->table} SET favorite_actor = :actor, favorite_actress = :actress, favorite_director = :director WHERE userid = :userid";
+        $stmt = $this->conn->prepare($query);
+        $stmt->bindParam(":actor", $actor);
+        $stmt->bindParam(":actress", $actress);
+        $stmt->bindParam(":director", $director);
+        $stmt->bindParam(":userid", $userid);
+        return $stmt->execute();
+    }
+
+    public function updateTop5Movies($userid, $moviesJson) {
+        $query = "UPDATE {$this->table} SET top5_movies = :movies WHERE userid = :userid";
+        $stmt = $this->conn->prepare($query);
+        $stmt->bindParam(":movies", $moviesJson);
+        $stmt->bindParam(":userid", $userid);
         return $stmt->execute();
     }
 }

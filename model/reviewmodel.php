@@ -215,4 +215,14 @@ class ReviewModel {
         $stmt->execute();
         return $stmt->fetchAll(PDO::FETCH_ASSOC);
     }
+
+    public function getUserReviews($user_id) {
+        $query = "SELECT * FROM {$this->reviews_table} 
+                  WHERE user_id = :user_id 
+                  ORDER BY created_at DESC";
+        $stmt = $this->conn->prepare($query);
+        $stmt->bindParam(":user_id", $user_id);
+        $stmt->execute();
+        return $stmt->fetchAll(PDO::FETCH_ASSOC);
+    }
 }
