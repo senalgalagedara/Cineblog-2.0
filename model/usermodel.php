@@ -22,7 +22,7 @@ class usermodel {
         $stmt->bindParam("username", $this->username);
         $stmt->bindParam("useremail", $this->useremail);
         $stmt->bindParam("password", $this->password);
-        $stmt->bindParam("cpassword", $this->cpassword);
+        $stmt->bindParam("5cpassword", $this->cpassword);
 
 
         return $stmt->execute();
