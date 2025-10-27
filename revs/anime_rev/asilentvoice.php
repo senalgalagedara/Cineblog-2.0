@@ -38,6 +38,7 @@ $movie_type = 'anime';
               <p class="podidetails">2016     |   Romance/Drama    |    2h 9m</p>
               <p class="details">A grade-school student with a hearing impairment is bullied and transfers to another school. Years later, the former bully is tormented by his behaviour and sets out to make amends.</p>
               <p class="cast">Miyu Irino | Saori Hayami | Yūki Kaneko</p>
+              <?php renderHeaderButtons($movie_id, $movie_title, $movie_type); ?>
             </div>
             <br>
           </div>
@@ -93,8 +94,6 @@ $movie_type = 'anime';
       </div>
     </div>
     <div class="space"></div>
-
-    <?php renderWatchlistButtons($movie_id, $movie_title, $movie_type); ?>
 
     <div class="movieratefinal">
       <h2 class="infotitlefinal">A Silent Voice</h2>

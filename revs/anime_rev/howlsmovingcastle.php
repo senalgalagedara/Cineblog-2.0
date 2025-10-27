@@ -38,6 +38,7 @@ $movie_type = 'anime';
               <p class="podidetails">2004     |   Fantasy/Adventure    |    1h 59m</p>
               <p class="details">Jealous of Sophie's closeness to Howl, a wizard, the Witch of Waste transforms her into an old lady. Sophie must find a way to break the spell with the help of Howl's friends, Calcifer and Markl.</p>
               <p class="cast">Takuya Kimura | Emily Mortimer | Tatsuya Gashuin</p>
+              <?php renderHeaderButtons($movie_id, $movie_title, $movie_type); ?>
             </div>
             <br>
           </div>
@@ -93,8 +94,6 @@ $movie_type = 'anime';
       </div>
     </div>
     <div class="space"></div>
-
-    <?php renderWatchlistButtons($movie_id, $movie_title, $movie_type); ?>
 
     <div class="movieratefinal">
       <h2 class="infotitlefinal">Howl's Moving Castle</h2>

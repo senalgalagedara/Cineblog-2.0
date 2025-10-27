@@ -40,6 +40,7 @@ $movie_type = 'movie';
               <p class="podidetails">1999   |   Crime/Thriller    |    2h 19m</p>
               <p class="details">Unhappy with his capitalistic lifestyle, a white-collared insomniac forms an underground fight club with Tyler, a careless soap salesman. Soon, their venture spirals down into something sinister.</p>
               <p class="cast">Edward Norton | Brad Pitt | Helena Bonham</p>
+              <?php renderHeaderButtons($movie_id, $movie_title, $movie_type); ?>
             </div>
             <br>
           </div>
@@ -97,8 +98,6 @@ $movie_type = 'movie';
     </div>
     
     <div class="space"></div>
-
-    <?php renderWatchlistButtons($movie_id, $movie_title, $movie_type); ?>
 
     <div class="movieratefinal">
       <h2 class="infotitlefinal">FIGHT CLUB</h2>

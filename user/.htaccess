@@ -1,0 +1,10 @@
+RewriteEngine On
+RewriteBase /movieblog/user/
+
+# Rewrite clean profile URLs to user_account.php with view parameter
+# Example: /movieblog/user/profile/john -> /movieblog/user/user_account.php?view=john
+RewriteRule ^profile/([a-zA-Z0-9_-]+)$ user_account.php?view_user=$1 [L,QSA]
+
+# Allow direct access to PHP files, images, CSS, JS
+RewriteCond %{REQUEST_FILENAME} -f
+RewriteRule ^.*$ - [L]

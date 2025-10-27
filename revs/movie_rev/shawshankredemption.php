@@ -40,6 +40,7 @@ $movie_type = 'movie';
               <p class="podidetails">1994   |   Crime/Thriller    |    2h 22m</p>
               <p class="details">Andy Dufresne, a successful banker, is arrested for the murders of his wife and her lover, and is sentenced to life imprisonment at the Shawshank prison. He becomes the most unconventional prisoner.</p>
               <p class="cast">Tim Robbins | Morgan Freeman | Clancy Brown</p>
+              <?php renderHeaderButtons($movie_id, $movie_title, $movie_type); ?>
             </div>
             <br>
           </div>
@@ -95,8 +96,6 @@ $movie_type = 'movie';
       </div>
     </div>
     <div class="space"></div>
-
-    <?php renderWatchlistButtons($movie_id, $movie_title, $movie_type); ?>
 
     <div class="movieratefinal">
       <h2 class="infotitlefinal">The Shawshank Redemption</h2>

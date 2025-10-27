@@ -38,6 +38,7 @@ $movie_type = 'anime';
               <p class="podidetails">2016     |   Romance/Fantasy    |    1h 47m</p>
               <p class="details">Two teenagers share a profound, magical connection upon discovering they are swapping bodies. Things manage to become even more complicated when the boy and girl decide to meet in person.</p>
               <p class="cast">Kamiki Ryunosuke | Masami Nagasawa | Mone Kamishiraishi</p>
+              <?php renderHeaderButtons($movie_id, $movie_title, $movie_type); ?>
             </div>
             <br>
           </div>
@@ -93,8 +94,6 @@ $movie_type = 'anime';
       </div>
     </div>
     <div class="space"></div>
-
-    <?php renderWatchlistButtons($movie_id, $movie_title, $movie_type); ?>
 
     <div class="movieratefinal">
       <h2 class="infotitlefinal">Your Name</h2>

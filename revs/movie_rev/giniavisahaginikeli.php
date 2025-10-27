@@ -40,6 +40,7 @@ $movie_type = 'movie';
               <p class="podidetails">1998   |   Drama/Action    |    1h 30m</p>
               <p class="details">The plot revolves around the ascension and downfall of Padmasiri, a gang leader in Sri Lanka.</p>
               <p class="cast">Jackson Anthony| Sriyantha Mendis | Mahendra Perera</p>
+              <?php renderHeaderButtons($movie_id, $movie_title, $movie_type); ?>
             </div>
             <br>
           </div>
@@ -95,8 +96,6 @@ $movie_type = 'movie';
       </div>
     </div>
     <div class="space"></div>
-
-    <?php renderWatchlistButtons($movie_id, $movie_title, $movie_type); ?>
 
     <div class="movieratefinal">
       <h2 class="infotitlefinal">Gini Avi Saha Gini Keli</h2>

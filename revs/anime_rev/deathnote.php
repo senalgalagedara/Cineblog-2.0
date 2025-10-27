@@ -38,6 +38,7 @@ $movie_type = 'anime';
               <p class="podidetails">2006   |   Thriller    |    1 Seasons</p>
               <p class="details">A high-school student discovers a supernatural notebook that grants its user the ability to kill.</p>
               <p class="cast">Mamoru Miyano | Kappei Yamaguchi | Shogo Sakata</p>
+              <?php renderHeaderButtons($movie_id, $movie_title, $movie_type); ?>
             </div>
             <br>
           </div>
@@ -91,8 +92,6 @@ $movie_type = 'anime';
       </div>
     </div>
     <div class="space"></div>
-
-    <?php renderWatchlistButtons($movie_id, $movie_title, $movie_type); ?>
 
     <div class="movieratefinal">
       <h2 class="infotitlefinal">Death Note</h2>

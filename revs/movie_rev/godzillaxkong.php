@@ -40,6 +40,7 @@ $movie_type = 'movie';
               <p class="podidetails">2024   |   Action/Sci-fi    |    1h 55m</p>
               <p class="details">Godzilla and the almighty Kong face a colossal threat hidden deep within the planet, challenging their very existence and the survival of the human race.</p>
               <p class="cast">Kaylee Hottle | Rebecca Hall | Dan Stevens</p>
+              <?php renderHeaderButtons($movie_id, $movie_title, $movie_type); ?>
             </div>
             <br>
           </div>
@@ -97,8 +98,6 @@ $movie_type = 'movie';
     
     <div class="space"></div>
 
-    <?php renderWatchlistButtons($movie_id, $movie_title, $movie_type); ?>
-
     <div class="movieratefinal">
       <h2 class="infotitlefinal">Godzilla x Kong: The New Empire</h2>
       <p class="infoshow">2024   |   Action/Sci-fi    |    1h 55m</p>
@@ -116,8 +115,6 @@ $movie_type = 'movie';
     <?php renderReviewSection($movie_id, $movie_title, $movie_type); ?>
 
     <div class="space"></div>
-
-    <?php renderWatchlistButtons($movie_id, $movie_title, $movie_type); ?>
 
     <div class="movieratefinal">
       <h2 class="infotitlefinal">Godzilla x Kong: The New Empire</h2>

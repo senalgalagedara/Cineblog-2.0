@@ -38,6 +38,7 @@ $movie_type = 'series';
               <p class="podidetails">2005- 2017   |   Drama    |    5 Seasons</p>
               <p class="details">Michael Scofield finds himself in the Ogygia Prison in Sana'a, Yemen, seven years after his apparent death. His friends, brother and fellow escapee do everything it takes to bring him home.</p>
               <p class="cast">Wentworth Miller | Dominic Purcell | Sarah Wayne</p>
+              <?php renderHeaderButtons($movie_id, $movie_title, $movie_type); ?>
             </div>
             <br>
           </div>
@@ -92,8 +93,6 @@ $movie_type = 'series';
       </div>
     </div>
     <div class="space"></div>
-
-    <?php renderWatchlistButtons($movie_id, $movie_title, $movie_type); ?>
 
     <div class="movieratefinal">
       <h2 class="infotitlefinal">Prison Break</h2>

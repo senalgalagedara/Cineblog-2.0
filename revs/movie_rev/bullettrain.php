@@ -40,6 +40,7 @@ $movie_type = 'movie';
               <p class="podidetails">2022   |   Action/Comedy    |    2h 6m</p>
               <p class="details">Ladybug, a professional assassin, is assigned to retrieve a briefcase from a bullet train. Soon, he finds himself battling many other killers who board the same train but with a different objective.</p>
               <p class="cast">Brad Pitt  | Joey King | Brian Henry</p>
+              <?php renderHeaderButtons($movie_id, $movie_title, $movie_type); ?>
             </div>
             <br>
           </div>
@@ -102,8 +103,6 @@ $movie_type = 'movie';
       
     </div>
     <div class="space"></div>
-
-    <?php renderWatchlistButtons($movie_id, $movie_title, $movie_type); ?>
 
     <div class="movieratefinal">
       <h2 class="infotitlefinal">BULLET TRAIN</h2>

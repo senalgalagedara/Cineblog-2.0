@@ -38,6 +38,7 @@ $movie_type = 'anime';
               <p class="podidetails">2020 - Present   |   Action    |    2 Seasons</p>
               <p class="details">After a boy is thrust into the world of the supernatural, he must rise to the challenge in order to prevent demons from obliterating all that he holds dear.</p>
               <p class="cast">Yuki Kaji | Kenjiro Tsuda | Yuichi Nakamura</p>
+              <?php renderHeaderButtons($movie_id, $movie_title, $movie_type); ?>
             </div>
             <br>
           </div>
@@ -92,8 +93,6 @@ $movie_type = 'anime';
       </div>
     </div>
     <div class="space"></div>
-
-    <?php renderWatchlistButtons($movie_id, $movie_title, $movie_type); ?>
 
     <div class="movieratefinal">
       <h2 class="infotitlefinal">Jujutsu Kaisen</h2>

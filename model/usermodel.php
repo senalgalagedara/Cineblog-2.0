@@ -71,6 +71,14 @@ class usermodel {
         return $stmt->fetch(PDO::FETCH_ASSOC);
     }
 
+    public function getUserByUsername($username) {
+        $query = "SELECT userid, username, useremail, avatar, avatar_mime, avatar_size, bio, favorite_actor, favorite_actress, favorite_director, top5_movies FROM {$this->table} WHERE username = :username";
+        $stmt = $this->conn->prepare($query);
+        $stmt->bindParam(":username", $username);
+        $stmt->execute();
+        return $stmt->fetch(PDO::FETCH_ASSOC);
+    }
+
     public function updateAvatar($userid, $blob, $mime, $size) {
         // Ensure avatar columns exist — if not, attempt to add them (helps when migration wasn't run)
         try {

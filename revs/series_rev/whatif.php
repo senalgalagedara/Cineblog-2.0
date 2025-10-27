@@ -38,6 +38,7 @@ $movie_type = 'series';
               <p class="podidetails">2021 - Present   |   Action    |    2 Seasons</p>
               <p class="details">Reimagining noteworthy events in the Marvel Cinematic Universe and creating a multiverse of infinite possibilities.</p>
               <p class="cast">Jeffrey Wright | Benedict Cumberbatch | Hayley Atwell</p>
+              <?php renderHeaderButtons($movie_id, $movie_title, $movie_type); ?>
             </div>
             <br>
           </div>
@@ -92,8 +93,6 @@ $movie_type = 'series';
       </div>
     </div>
     <div class="space"></div>
-
-    <?php renderWatchlistButtons($movie_id, $movie_title, $movie_type); ?>
 
     <div class="movieratefinal">
       <h2 class="infotitlefinal">What If...?</h2>

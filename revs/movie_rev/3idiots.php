@@ -40,6 +40,7 @@ $movie_type = 'movie';
               <p class="podidetails">2009   |   Comedy/Romance    |    2h 50m</p>
               <p class="details"> In college, Farhan and Raju form a great bond with Rancho due to his refreshing outlook. Years later, a bet gives them a chance to look for their long-lost friend whose existence seems rather elusive.</p>
               <p class="cast">Aamir Khan| Sharman Joshi | R. Madhavan</p>
+              <?php renderHeaderButtons($movie_id, $movie_title, $movie_type); ?>
             </div>
             <br>
           </div>
@@ -96,8 +97,6 @@ $movie_type = 'movie';
     </div>
 
     <div class="space"></div>
-
-    <?php renderWatchlistButtons($movie_id, $movie_title, $movie_type); ?>
 
     <div class="movieratefinal">
       <h2 class="infotitlefinal">3 Idiots</h2>

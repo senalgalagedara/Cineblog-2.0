@@ -40,6 +40,7 @@ $movie_type = 'movie';
               <p class="podidetails">2024   |   Action/Comedy    |    2h 5m</p>
               <p class="details"> As the mystery surrounding the missing actor deepens, Colt soon finds himself ensnared in a sinister plot that pushes him to the edge of a fall more dangerous than any stunt.</p>
               <p class="cast">Ryan Gosling | Emily Blunt | Aaron Taylor</p>
+              <?php renderHeaderButtons($movie_id, $movie_title, $movie_type); ?>
             </div>
             <br>
           </div>
@@ -95,8 +96,6 @@ $movie_type = 'movie';
       </div>
     </div>
     <div class="space"></div>
-
-    <?php renderWatchlistButtons($movie_id, $movie_title, $movie_type); ?>
 
     <div class="movieratefinal">
       <h2 class="infotitlefinal">The Fall Guy</h2>

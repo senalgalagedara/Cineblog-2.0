@@ -38,6 +38,7 @@ $movie_type = 'series';
               <p class="podidetails">2015 - 2018   |   Action    |    3 Seasons</p>
               <p class="details">Matt Murdock manages to overcome the challenges that he faces due to him being blind since childhood and fights criminals as a lawyer and Daredevil.</p>
               <p class="cast">Charlie Cox | Vincent D'Onofrio | Deborah Ann Woll</p>
+              <?php renderHeaderButtons($movie_id, $movie_title, $movie_type); ?>
             </div>
             <br>
           </div>
@@ -92,8 +93,6 @@ $movie_type = 'series';
       </div>
     </div>
     <div class="space"></div>
-
-    <?php renderWatchlistButtons($movie_id, $movie_title, $movie_type); ?>
 
     <div class="movieratefinal">
       <h2 class="infotitlefinal">Daredevil</h2>

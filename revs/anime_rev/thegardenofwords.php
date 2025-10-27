@@ -38,6 +38,7 @@ $movie_type = 'anime';
               <p class="podidetails">2013     |   Romance/Drama    |    46m</p>
               <p class="details">When a lonely teenager decides to miss his morning lessons in favour of sitting in a lovely garden, he meets a mysterious older woman who shares his feelings of alienation.</p>
               <p class="cast">Kana Hanazawa | Miyu Irino</p>
+              <?php renderHeaderButtons($movie_id, $movie_title, $movie_type); ?>
             </div>
             <br>
           </div>
@@ -85,8 +86,6 @@ $movie_type = 'anime';
       </div>
     </div>
     <div class="space"></div>
-
-    <?php renderWatchlistButtons($movie_id, $movie_title, $movie_type); ?>
 
     <div class="movieratefinal">
       <h2 class="infotitlefinal">The Garden of Words</h2>

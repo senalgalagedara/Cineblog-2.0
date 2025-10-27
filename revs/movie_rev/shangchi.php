@@ -40,6 +40,7 @@ $movie_type = 'movie';
               <p class="podidetails">2021   |   Action/Adventure    |    2h 12m</p>
               <p class="details">Shang-Chi, a martial artist, lives a quiet life after he leaves his father and the shadowy Ten Rings organisation behind. Years later, he is forced to confront his past when the Ten Rings attack him.</p>
               <p class="cast">Simu Liu | Tony Leung | Awkwafina</p>
+              <?php renderHeaderButtons($movie_id, $movie_title, $movie_type); ?>
             </div>
             <br>
           </div>
@@ -96,8 +97,6 @@ $movie_type = 'movie';
     </div>
     
     <div class="space"></div>
-
-    <?php renderWatchlistButtons($movie_id, $movie_title, $movie_type); ?>
 
     <div class="movieratefinal">
       <h2 class="infotitlefinal">SHANG-CHI and the LEGEND of the TEN RINGS</h2>

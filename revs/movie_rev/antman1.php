@@ -40,6 +40,7 @@ $movie_type = 'movie';
               <p class="podidetails">2015   |   Action/Comedy    |    1h 58m</p>
               <p class="details">Scott, a master thief, gains the ability to shrink in scale with the help of a futuristic suit. Now he must rise to the occasion of his superhero status and protect his secret from unsavoury elements.</p>
               <p class="cast">Paul Rudd | Evangeline Lilly | Michael Pena</p>
+              <?php renderHeaderButtons($movie_id, $movie_title, $movie_type); ?>
             </div>
             <br>
           </div>
@@ -101,7 +102,6 @@ $movie_type = 'movie';
     
     </div>
     <div class="space"></div>
-    <?php renderWatchlistButtons($movie_id, $movie_title, $movie_type); ?>
 
     <div class="movieratefinal">
       <h2 class="infotitlefinal">ANT-MAN</h2>

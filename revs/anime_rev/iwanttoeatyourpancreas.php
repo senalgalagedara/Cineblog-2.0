@@ -38,6 +38,7 @@ $movie_type = 'anime';
               <p class="podidetails">2018     |   Romance/Drama    |    1h 48m</p>
               <p class="details">A high school student discovers one of his classmates, Sakura Yamauchi, is suffering from a terminal illness. This secret brings the two together, as she lives out her final moments.</p>
               <p class="cast">Mahiro Takasugi | Minami Hamabe | Yukiyo Fujii</p>
+              <?php renderHeaderButtons($movie_id, $movie_title, $movie_type); ?>
             </div>
             <br>
           </div>
@@ -93,8 +94,6 @@ $movie_type = 'anime';
       </div>
     </div>
     <div class="space"></div>
-
-    <?php renderWatchlistButtons($movie_id, $movie_title, $movie_type); ?>
 
     <div class="movieratefinal">
       <h2 class="infotitlefinal">I Want to Eat Your Pancreas</h2>

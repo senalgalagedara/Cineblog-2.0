@@ -38,6 +38,7 @@ $movie_type = 'series';
               <p class="podidetails">2021 - 2023   |   Action    |    2 Seasons</p>
               <p class="details">After stealing the Tesseract, Loki comes into contact with a mysterious organization that gives him an ominous ultimatum, either fix the timeline or cease to exist completely.</p>
               <p class="cast">Tom Hiddleston | Sophia Di Martino | Owen Wilson</p>
+              <?php renderHeaderButtons($movie_id, $movie_title, $movie_type); ?>
             </div>
             <br>
           </div>
@@ -92,8 +93,6 @@ $movie_type = 'series';
       </div>
     </div>
     <div class="space"></div>
-
-    <?php renderWatchlistButtons($movie_id, $movie_title, $movie_type); ?>
 
     <div class="movieratefinal">
       <h2 class="infotitlefinal">Loki</h2>

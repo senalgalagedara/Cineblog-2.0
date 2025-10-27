@@ -38,6 +38,7 @@ $movie_type = 'anime';
               <p class="podidetails">2002 - 2017   |   Adventure    |    10 Seasons</p>
               <p class="details">Naruto, a teenage ninja, embarks on various adventures with his friends and trains hard to become the Hokage. However, he must prove his mettle in order to be successful in his quest.</p>
               <p class="cast">Junko Takeuchi | Noriaki Sugiyama | Kazuhiko Inoue</p>
+              <?php renderHeaderButtons($movie_id, $movie_title, $movie_type); ?>
             </div>
             <br>
           </div>
@@ -92,8 +93,6 @@ $movie_type = 'anime';
       </div>
     </div>
     <div class="space"></div>
-
-    <?php renderWatchlistButtons($movie_id, $movie_title, $movie_type); ?>
 
     <div class="movieratefinal">
       <h2 class="infotitlefinal">Naruto</h2>

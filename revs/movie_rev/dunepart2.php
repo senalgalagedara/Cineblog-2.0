@@ -40,6 +40,7 @@ $movie_type = 'movie';
               <p class="podidetails">2024   |   Sci-fi/Adventure    |    2h 46m</p>
               <p class="details">Paul Atreides unites with Chani and the Fremen while seeking revenge against the conspirators who destroyed his family. Facing a choice between the love of his life and the fate of the universe, he must prevent a terrible future only he can foresee.</p>
               <p class="cast">Timothee Chalamet | Zendaya | Josh Brolin</p>
+              <?php renderHeaderButtons($movie_id, $movie_title, $movie_type); ?>
             </div>
             <br>
           </div>
@@ -100,8 +101,6 @@ $movie_type = 'movie';
       </div>
     </div>
     <div class="space"></div>
-
-    <?php renderWatchlistButtons($movie_id, $movie_title, $movie_type); ?>
 
     <div class="movieratefinal">
       <h2 class="infotitlefinal">DUNE: CHAPTER 2</h2>

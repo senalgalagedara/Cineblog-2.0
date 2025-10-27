@@ -40,6 +40,7 @@ $movie_type = 'movie';
               <p class="podidetails">2024   |   Action/Comedy    |    </p>
               <p class="details"> Wolverine is recovering from his injuries when he crosses paths with the loudmouth, Deadpool. They team up to defeat a common enemy.</p>
               <p class="cast">Ryan Reynolds | Hugh Jackman | Owen Wilson</p>
+              <?php renderHeaderButtons($movie_id, $movie_title, $movie_type); ?>
             </div>
             <br>
           </div>
@@ -95,8 +96,6 @@ $movie_type = 'movie';
       </div>
     </div>
     <div class="space"></div>
-
-    <?php renderWatchlistButtons($movie_id, $movie_title, $movie_type); ?>
 
     <div class="movieratefinal">
       <h2 class="infotitlefinal">Deadpool & Wolverine</h2>

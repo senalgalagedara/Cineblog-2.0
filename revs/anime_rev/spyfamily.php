@@ -38,6 +38,7 @@ $movie_type = 'anime';
               <p class="podidetails">2022 - 2023   |   Comedy    |    2 Seasons</p>
               <p class="details">Agent Twilight, the greatest spy of the nation of Westalis, assembles a fake family in order to infiltrate an elite private school, not realizing he recruited a psychic child and a legendary assassin also in need of a cover family.</p>
               <p class="cast">Takuya Eguchi | Takuya Eguchi | Saori Hayami</p>
+              <?php renderHeaderButtons($movie_id, $movie_title, $movie_type); ?>
             </div>
             <br>
           </div>
@@ -92,8 +93,6 @@ $movie_type = 'anime';
       </div>
     </div>
     <div class="space"></div>
-
-    <?php renderWatchlistButtons($movie_id, $movie_title, $movie_type); ?>
 
     <div class="movieratefinal">
       <h2 class="infotitlefinal">Spy x Family</h2>

@@ -40,6 +40,7 @@ $movie_type = 'movie';
               <p class="podidetails">2023   |   Comaedy/Fantasy    |    1h 54m</p>
               <p class="details">Barbie and Ken are having the time of their lives in the colorful and seemingly perfect world of Barbie Land. However, when they get a chance to go to the real world, they soon discover the joys and perils of living among humans.</p>
               <p class="cast">Ryan Gosling | Margot Robbie | Simu Liu</p>
+              <?php renderHeaderButtons($movie_id, $movie_title, $movie_type); ?>
             </div>
             <br>
           </div>
@@ -101,8 +102,6 @@ $movie_type = 'movie';
       
     </div>
     <div class="space"></div>
-
-    <?php renderWatchlistButtons($movie_id, $movie_title, $movie_type); ?>
 
     <div class="movieratefinal">
       <h2 class="infotitlefinal">BARBIE</h2>

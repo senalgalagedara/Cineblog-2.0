@@ -38,6 +38,7 @@ $movie_type = 'series';
               <p class="podidetails">2015 - 2022   |   Drama    |    6 Seasons</p>
               <p class="details">Ex-con artist Jimmy McGill turns into a small-time attorney and goes through a series of trials and tragedies, as he transforms into his alter ego Saul Goodman, a morally challenged criminal lawyer.</p>
               <p class="cast">Bob Odenkirk | Patrick Fabian | Rhea Seehorn</p>
+              <?php renderHeaderButtons($movie_id, $movie_title, $movie_type); ?>
             </div>
             <br>
           </div>
@@ -97,8 +98,6 @@ $movie_type = 'series';
       </div>
     </div>
     <div class="space"></div>
-
-    <?php renderWatchlistButtons($movie_id, $movie_title, $movie_type); ?>
 
     <div class="movieratefinal">
       <h2 class="infotitlefinal">Better Call Saul</h2>

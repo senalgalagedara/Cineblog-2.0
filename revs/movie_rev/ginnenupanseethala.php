@@ -40,6 +40,7 @@ $movie_type = 'movie';
               <p class="podidetails">2018   |  Drama/Thriller   |   2h 30m</p>
               <p class="details">Ginnen Upan Seethala is a 2019 Sinhala biographical film about Sri Lankan Marxist revolutionary Rohana Wijeweera directed by Anuruddha Jayasinghe</p>
               <p class="cast">Kamal Addararachchi | Jagath Manuwarna | Sulochana Weerasinghe</p>
+              <?php renderHeaderButtons($movie_id, $movie_title, $movie_type); ?>
             </div>
             <br>
           </div>
@@ -95,8 +96,6 @@ $movie_type = 'movie';
       </div>
     </div>
     <div class="space"></div>
-
-    <?php renderWatchlistButtons($movie_id, $movie_title, $movie_type); ?>
 
     <div class="movieratefinal">
       <h2 class="infotitlefinal">Ginnen Upan Seethala</h2>

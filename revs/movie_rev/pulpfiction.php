@@ -40,6 +40,7 @@ $movie_type = 'movie';
               <p class="podidetails">1994   |   Crime/Thriller    |    2h 22m</p>
               <p class="details">In the realm of underworld, a series of incidents intertwines the lives of two Los Angeles mobsters, a gangster's wife, a boxer and two small-time criminals.</p>
               <p class="cast">Samuel L. Jackson| John Travolta | Uma Thurman</p>
+              <?php renderHeaderButtons($movie_id, $movie_title, $movie_type); ?>
             </div>
             <br>
           </div>
@@ -95,8 +96,6 @@ $movie_type = 'movie';
       </div>
     </div>
     <div class="space"></div>
-
-    <?php renderWatchlistButtons($movie_id, $movie_title, $movie_type); ?>
 
     <div class="movieratefinal">
       <h2 class="infotitlefinal">Pulp Fiction</h2>

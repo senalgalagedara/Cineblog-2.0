@@ -40,6 +40,7 @@ $movie_type = 'movie';
               <p class="podidetails">1995   |   Crime/Mystery    |    2h 7m</p>
               <p class="details"> Detectives Somerset and Mills, one a seasoned cop, the other a relatively new one, are paired up to solve murders. Together they attempt to find a killer who is inspired by the seven deadly sins.</p>
               <p class="cast">Brad Pitt| Morgan Freeman | Kevin Spacey</p>
+              <?php renderHeaderButtons($movie_id, $movie_title, $movie_type); ?>
             </div>
             <br>
           </div>
@@ -95,8 +96,6 @@ $movie_type = 'movie';
       </div>
     </div>
     <div class="space"></div>
-
-    <?php renderWatchlistButtons($movie_id, $movie_title, $movie_type); ?>
 
     <div class="movieratefinal">
       <h2 class="infotitlefinal">Seven</h2>

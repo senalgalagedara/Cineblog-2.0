@@ -38,6 +38,7 @@ $movie_type = 'anime';
               <p class="podidetails">1999 - Present   |   Action    |    20 Seasons</p>
               <p class="details">Monkey D. Luffy wants to become the King of all pirates. Along his quest he meets: a skilled swordsman named Roronoa Zolo; Nami, a greedy thief who has a knack for navigation;</p>
               <p class="cast">Mayumi Tanaka | Kazuya Nakai | Hiroaki Hirata</p>
+              <?php renderHeaderButtons($movie_id, $movie_title, $movie_type); ?>
             </div>
             <br>
           </div>
@@ -92,8 +93,6 @@ $movie_type = 'anime';
       </div>
     </div>
     <div class="space"></div>
-
-    <?php renderWatchlistButtons($movie_id, $movie_title, $movie_type); ?>
 
     <div class="movieratefinal">
       <h2 class="infotitlefinal">One Piece</h2>

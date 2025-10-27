@@ -40,6 +40,7 @@ $movie_type = 'movie';
               <p class="podidetails">2023   |   Mystery/Thriller    |    3h </p>
               <p class="details">During World War II, Lt. Gen. Leslie Groves Jr. appoints physicist J. Robert Oppenheimer to work on the top-secret Manhattan Project. Oppenheimer and a team of scientists spend years developing and designing the atomic bomb.</p>
               <p class="cast">Cillian Murphy | Robert Downery Jr. | Florence Pugh</p>
+              <?php renderHeaderButtons($movie_id, $movie_title, $movie_type); ?>
             </div>
             <br>
           </div>
@@ -100,8 +101,6 @@ $movie_type = 'movie';
       </div>
     </div>
     <div class="space"></div>
-
-    <?php renderWatchlistButtons($movie_id, $movie_title, $movie_type); ?>
 
     <div class="movieratefinal">
       <h2 class="infotitlefinal">OPPENHEIMER</h2>

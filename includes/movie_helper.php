@@ -343,6 +343,234 @@ function renderReviewSection($movie_id, $movie_title, $movie_type = 'anime') {
     <?php
 }
 
+function renderHeaderButtons($movie_id, $movie_title, $movie_type = 'anime') {
+    $movieData = getMovieData($movie_id);
+    $isLoggedIn = isset($_SESSION['user_id']);
+    
+    // Debug output
+    echo "<!-- Debug: movie_id=$movie_id, movie_title=$movie_title, movie_type=$movie_type -->";
+    echo "<!-- Debug: isLoggedIn=" . ($isLoggedIn ? 'true' : 'false') . " -->";
+    echo "<!-- Debug: is_watched=" . ($movieData['is_watched'] ? 'true' : 'false') . " -->";
+    echo "<!-- Debug: is_in_watchlist=" . ($movieData['is_in_watchlist'] ? 'true' : 'false') . " -->";
+    ?>
+    
+    <div class="header-action-buttons">
+        <?php if ($isLoggedIn): ?>
+            <button class="header-action-btn watched-btn <?php echo $movieData['is_watched'] ? 'active' : ''; ?>" 
+                    id="watchedBtn"
+                    data-movie-id="<?php echo htmlspecialchars($movie_id); ?>"
+                    data-movie-title="<?php echo htmlspecialchars($movie_title); ?>"
+                    data-movie-type="<?php echo htmlspecialchars($movie_type); ?>"
+                    title="<?php echo $movieData['is_watched'] ? 'Remove from Watched' : 'Mark as Watched'; ?>">
+                <?php echo $movieData['is_watched'] ? 'Watched' : 'Mark as Watched'; ?>
+            </button>
+            
+            <button class="header-action-btn wishlist-btn <?php echo $movieData['is_in_watchlist'] ? 'active' : ''; ?>" 
+                    id="watchlistBtn"
+                    data-movie-id="<?php echo htmlspecialchars($movie_id); ?>"
+                    data-movie-title="<?php echo htmlspecialchars($movie_title); ?>"
+                    data-movie-type="<?php echo htmlspecialchars($movie_type); ?>"
+                    title="<?php echo $movieData['is_in_watchlist'] ? 'Remove from Watchlist' : 'Add to Watchlist'; ?>">
+                <span class="heart-icon"><?php echo $movieData['is_in_watchlist'] ? '❤️' : '🤍'; ?></span>
+            </button>
+        <?php else: ?>
+            <button class="header-action-btn watched-btn"
+                    id="watchedBtnGuest"
+                    title="Mark as Watched">
+                Mark as Watched
+            </button>
+            <button class="header-action-btn wishlist-btn"
+                    id="watchlistBtnGuest"
+                    title="Add to Wishlist">
+                <span class="heart-icon">🤍</span>
+            </button>
+        <?php endif; ?>
+    </div>
+
+    <style>
+        .header-action-buttons {
+            display: flex;
+            gap: 10px;
+            margin-top: 15px;
+        }
+        .header-action-btn {
+            background: rgba(0, 0, 0, 0.7);
+            color: white;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            padding: 10px 20px;
+            font-size: 14px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+        }
+        .header-action-btn:hover {
+            background: rgba(0, 0, 0, 0.9);
+            border-color: rgba(255, 255, 255, 0.6);
+            transform: translateY(-2px);
+        }
+        .watched-btn {
+            min-width: 150px;
+        }
+        .wishlist-btn {
+            min-width: 60px;
+            padding: 10px 15px;
+        }
+        .heart-icon {
+            font-size: 20px;
+            display: inline-block;
+        }
+        .header-action-btn.active {
+            background: rgba(255, 255, 255, 0.2);
+            border-color: rgba(255, 255, 255, 0.8);
+        }
+    </style>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log('DOM loaded, setting up event listeners');
+            
+            // Handle watched button
+            const watchedBtn = document.getElementById('watchedBtn');
+            if (watchedBtn) {
+                console.log('Watched button found');
+                watchedBtn.addEventListener('click', function() {
+                    const movieId = this.getAttribute('data-movie-id');
+                    const movieTitle = this.getAttribute('data-movie-title');
+                    const movieType = this.getAttribute('data-movie-type');
+                    console.log('Watched button clicked:', movieId, movieTitle, movieType);
+                    toggleWatched(movieId, movieTitle, movieType);
+                });
+            } else {
+                console.log('Watched button NOT found');
+            }
+            
+            // Handle wishlist button
+            const wishlistBtn = document.getElementById('watchlistBtn');
+            if (wishlistBtn) {
+                console.log('Wishlist button found');
+                wishlistBtn.addEventListener('click', function() {
+                    const movieId = this.getAttribute('data-movie-id');
+                    const movieTitle = this.getAttribute('data-movie-title');
+                    const movieType = this.getAttribute('data-movie-type');
+                    console.log('Wishlist button clicked:', movieId, movieTitle, movieType);
+                    toggleWatchlist(movieId, movieTitle, movieType);
+                });
+            } else {
+                console.log('Wishlist button NOT found');
+            }
+            
+            // Handle guest buttons
+            const watchedBtnGuest = document.getElementById('watchedBtnGuest');
+            if (watchedBtnGuest) {
+                watchedBtnGuest.addEventListener('click', function() {
+                    alert('Please login to use this feature.');
+                    window.location.href = '/movieblog/login.php';
+                });
+            }
+            
+            const wishlistBtnGuest = document.getElementById('watchlistBtnGuest');
+            if (wishlistBtnGuest) {
+                wishlistBtnGuest.addEventListener('click', function() {
+                    alert('Please login to use this feature.');
+                    window.location.href = '/movieblog/login.php';
+                });
+            }
+        });
+        
+        function toggleWatched(movieId, movieTitle, movieType) {
+            console.log('toggleWatched called:', movieId, movieTitle, movieType);
+            const btn = document.getElementById('watchedBtn');
+            console.log('Button found:', btn);
+            if (!btn) {
+                alert('Button not found!');
+                return;
+            }
+            const isWatched = btn.classList.contains('active');
+            const action = isWatched ? 'remove_from_watched' : 'mark_as_watched';
+            console.log('Action:', action);
+
+            const formData = new FormData();
+            formData.append('action', action);
+            formData.append('movie_id', movieId);
+            formData.append('movie_title', movieTitle);
+            formData.append('movie_type', movieType);
+
+            fetch('/movieblog/controller/reviewController.php', {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => {
+                console.log('Response status:', response.status);
+                return response.json();
+            })
+            .then(data => {
+                console.log('Response data:', data);
+                if (data.success) {
+                    location.reload();
+                } else {
+                    if (data.redirect) {
+                        alert(data.message);
+                        window.location.href = data.redirect;
+                    } else {
+                        alert(data.message);
+                    }
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                alert('An error occurred. Please try again.');
+            });
+        }
+
+        function toggleWatchlist(movieId, movieTitle, movieType) {
+            console.log('toggleWatchlist called:', movieId, movieTitle, movieType);
+            const btn = document.getElementById('watchlistBtn');
+            console.log('Button found:', btn);
+            if (!btn) {
+                alert('Button not found!');
+                return;
+            }
+            const isInWatchlist = btn.classList.contains('active');
+            const action = isInWatchlist ? 'remove_from_watchlist' : 'add_to_watchlist';
+            console.log('Action:', action);
+
+            const formData = new FormData();
+            formData.append('action', action);
+            formData.append('movie_id', movieId);
+            formData.append('movie_title', movieTitle);
+            formData.append('movie_type', movieType);
+
+            fetch('/movieblog/controller/reviewController.php', {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => {
+                console.log('Response status:', response.status);
+                return response.json();
+            })
+            .then(data => {
+                console.log('Response data:', data);
+                if (data.success) {
+                    location.reload();
+                } else {
+                    if (data.redirect) {
+                        alert(data.message);
+                        window.location.href = data.redirect;
+                    } else {
+                        alert(data.message);
+                    }
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                alert('An error occurred. Please try again.');
+            });
+        }
+    </script>
+    <?php
+}
+
 function renderWatchlistButtons($movie_id, $movie_title, $movie_type = 'anime') {
     $movieData = getMovieData($movie_id);
     $isLoggedIn = isset($_SESSION['user_id']);
@@ -382,9 +610,10 @@ function renderWatchlistButtons($movie_id, $movie_title, $movie_type = 'anime') 
             flex-wrap: wrap;
         }
         .action-btn {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: black;
             color: white;
             border: none;
+            width: 50%;
             padding: 12px 25px;
             font-size: 16px;
             border-radius: 25px;
@@ -408,72 +637,74 @@ function renderWatchlistButtons($movie_id, $movie_title, $movie_type = 'anime') 
     </style>
 
     <script>
-        function toggleWatched(movieId, movieTitle, movieType) {
-            const btn = document.getElementById('watchedBtn');
-            const isWatched = btn.classList.contains('active');
-            const action = isWatched ? 'remove_from_watched' : 'mark_as_watched';
+        if (typeof toggleWatched === 'undefined') {
+            function toggleWatched(movieId, movieTitle, movieType) {
+                const btn = document.getElementById('watchedBtn');
+                const isWatched = btn.classList.contains('active');
+                const action = isWatched ? 'remove_from_watched' : 'mark_as_watched';
 
-            const formData = new FormData();
-            formData.append('action', action);
-            formData.append('movie_id', movieId);
-            formData.append('movie_title', movieTitle);
-            formData.append('movie_type', movieType);
+                const formData = new FormData();
+                formData.append('action', action);
+                formData.append('movie_id', movieId);
+                formData.append('movie_title', movieTitle);
+                formData.append('movie_type', movieType);
 
-            fetch('/movieblog/controller/reviewController.php', {
-                method: 'POST',
-                body: formData
-            })
-            .then(response => response.json())
-            .then(data => {
-                if (data.success) {
-                    location.reload();
-                } else {
-                    if (data.redirect) {
-                        alert(data.message);
-                        window.location.href = data.redirect;
+                fetch('/movieblog/controller/reviewController.php', {
+                    method: 'POST',
+                    body: formData
+                })
+                .then(response => response.json())
+                .then(data => {
+                    if (data.success) {
+                        location.reload();
                     } else {
-                        alert(data.message);
+                        if (data.redirect) {
+                            alert(data.message);
+                            window.location.href = data.redirect;
+                        } else {
+                            alert(data.message);
+                        }
                     }
-                }
-            })
-            .catch(error => {
-                console.error('Error:', error);
-                alert('An error occurred. Please try again.');
-            });
-        }
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                    alert('An error occurred. Please try again.');
+                });
+            }
 
-        function toggleWatchlist(movieId, movieTitle, movieType) {
-            const btn = document.getElementById('watchlistBtn');
-            const isInWatchlist = btn.classList.contains('active');
-            const action = isInWatchlist ? 'remove_from_watchlist' : 'add_to_watchlist';
+            function toggleWatchlist(movieId, movieTitle, movieType) {
+                const btn = document.getElementById('watchlistBtn');
+                const isInWatchlist = btn.classList.contains('active');
+                const action = isInWatchlist ? 'remove_from_watchlist' : 'add_to_watchlist';
 
-            const formData = new FormData();
-            formData.append('action', action);
-            formData.append('movie_id', movieId);
-            formData.append('movie_title', movieTitle);
-            formData.append('movie_type', movieType);
+                const formData = new FormData();
+                formData.append('action', action);
+                formData.append('movie_id', movieId);
+                formData.append('movie_title', movieTitle);
+                formData.append('movie_type', movieType);
 
-            fetch('/movieblog/controller/reviewController.php', {
-                method: 'POST',
-                body: formData
-            })
-            .then(response => response.json())
-            .then(data => {
-                if (data.success) {
-                    location.reload();
-                } else {
-                    if (data.redirect) {
-                        alert(data.message);
-                        window.location.href = data.redirect;
+                fetch('/movieblog/controller/reviewController.php', {
+                    method: 'POST',
+                    body: formData
+                })
+                .then(response => response.json())
+                .then(data => {
+                    if (data.success) {
+                        location.reload();
                     } else {
-                        alert(data.message);
+                        if (data.redirect) {
+                            alert(data.message);
+                            window.location.href = data.redirect;
+                        } else {
+                            alert(data.message);
+                        }
                     }
-                }
-            })
-            .catch(error => {
-                console.error('Error:', error);
-                alert('An error occurred. Please try again.');
-            });
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                    alert('An error occurred. Please try again.');
+                });
+            }
         }
     </script>
     <?php

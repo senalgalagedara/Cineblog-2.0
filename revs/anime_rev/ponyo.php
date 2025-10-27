@@ -38,6 +38,7 @@ $movie_type = 'anime';
               <p class="podidetails">2008     |   Fantasy/Adventure    |    1h 43m</p>
               <p class="details">Sosuke rescues a goldfish trapped in a bottle. The goldfish, who is the daughter of a wizard, transforms herself into a young girl with her father's magic and falls in love with Sosuke.</p>
               <p class="cast">Yuria Nara | Hiroki Doi | George Tokoro</p>
+              <?php renderHeaderButtons($movie_id, $movie_title, $movie_type); ?>
             </div>
             <br>
           </div>
@@ -93,8 +94,6 @@ $movie_type = 'anime';
       </div>
     </div>
     <div class="space"></div>
-
-    <?php renderWatchlistButtons($movie_id, $movie_title, $movie_type); ?>
 
     <div class="movieratefinal">
       <h2 class="infotitlefinal">Ponyo</h2>

@@ -40,6 +40,7 @@ $movie_type = 'movie';
               <p class="podidetails">2016   |   Sport/Drama    |    3h 10m</p>
               <p class="details">M S Dhoni, a boy from Ranchi, aspires to play cricket for India. Though he initially tries to please his father by working for the Indian Railways, he ultimately decides to chase his dreams.</p>
               <p class="cast">Sushant Singh Rajput| Kiara Advani | Anupam Kher</p>
+              <?php renderHeaderButtons($movie_id, $movie_title, $movie_type); ?>
             </div>
             <br>
           </div>
@@ -95,8 +96,6 @@ $movie_type = 'movie';
       </div>
     </div>
     <div class="space"></div>
-
-    <?php renderWatchlistButtons($movie_id, $movie_title, $movie_type); ?>
 
     <div class="movieratefinal">
       <h2 class="infotitlefinal">M.S. Dhoni: The Untold Story</h2>

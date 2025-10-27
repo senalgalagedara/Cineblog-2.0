@@ -38,6 +38,7 @@ $movie_type = 'series';
               <p class="podidetails">2017 - 2021   |   Thriller    |    5 Seasons</p>
               <p class="details">When the national mint and a touring school group are held hostage by robbers, police believe that the thieves have no way out. Little do they know that the thieves have a bigger plan in store.</p>
               <p class="cast">Álvaro Morte | Miguel Herrán | Úrsula Corberó</p>
+              <?php renderHeaderButtons($movie_id, $movie_title, $movie_type); ?>
             </div>
             <br>
           </div>
@@ -92,8 +93,6 @@ $movie_type = 'series';
       </div>
     </div>
     <div class="space"></div>
-
-    <?php renderWatchlistButtons($movie_id, $movie_title, $movie_type); ?>
 
     <div class="movieratefinal">
       <h2 class="infotitlefinal">Money Heist</h2>

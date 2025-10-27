@@ -38,6 +38,7 @@ $movie_type = 'anime';
               <p class="podidetails">2022   |   Action    |    1 Seasons</p>
               <p class="details">Betrayed and killed, a teenager named Denji gets revived as Chainsaw Man, a soul with a devil's heart.</p>
               <p class="cast">Tomori Kusunoki | Kikunosuke Toya | Shogo Sakata</p>
+              <?php renderHeaderButtons($movie_id, $movie_title, $movie_type); ?>
             </div>
             <br>
           </div>
@@ -91,8 +92,6 @@ $movie_type = 'anime';
       </div>
     </div>
     <div class="space"></div>
-
-    <?php renderWatchlistButtons($movie_id, $movie_title, $movie_type); ?>
 
     <div class="movieratefinal">
       <h2 class="infotitlefinal">Chainsaw Man</h2>

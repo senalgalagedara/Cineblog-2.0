@@ -38,6 +38,7 @@ $movie_type = 'series';
               <p class="podidetails">2015 - 2022   |   Drama    |    5 Seasons</p>
               <p class="details">Walter White, a chemistry teacher, discovers that he has cancer and decides to get into the meth-making business to repay his medical debts. His priorities begin to change when he partners with Jesse.</p>
               <p class="cast">Bryan Cranston | Aaron Paul | Bob Odenkirk</p>
+              <?php renderHeaderButtons($movie_id, $movie_title, $movie_type); ?>
             </div>
             <br>
           </div>
@@ -97,8 +98,6 @@ $movie_type = 'series';
       </div>
     </div>
     <div class="space"></div>
-
-    <?php renderWatchlistButtons($movie_id, $movie_title, $movie_type); ?>
 
     <div class="movieratefinal">
       <h2 class="infotitlefinal">Breaking Bad</h2>

@@ -38,6 +38,7 @@ $movie_type = 'series';
               <p class="podidetails">2011 - 2019   |   Drama    |    8 Seasons</p>
               <p class="details">Nine noble families wage war against each other in order to gain control over the mythical land of Westeros. Meanwhile, a force is rising after millenniums and threatens the existence of living men.</p>
               <p class="cast">Emilia Clarke | Kit Harington | Peter Dinklage</p>
+              <?php renderHeaderButtons($movie_id, $movie_title, $movie_type); ?>
             </div>
             <br>
           </div>
@@ -97,8 +98,6 @@ $movie_type = 'series';
       </div>
     </div>
     <div class="space"></div>
-
-    <?php renderWatchlistButtons($movie_id, $movie_title, $movie_type); ?>
 
     <div class="movieratefinal">
       <h2 class="infotitlefinal">Game of Thrones</h2>

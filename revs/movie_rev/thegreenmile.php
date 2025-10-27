@@ -40,6 +40,7 @@ $movie_type = 'movie';
               <p class="podidetails">1999   |   Crime/Fantasy    |    3h 9m</p>
               <p class="details">Paul Edgecomb, the head guard of a prison, meets an inmate, John Coffey, a black man who is accused of murdering two girls. His life changes drastically when he discovers that John has a special gift.</p>
               <p class="cast">Tom Hanks | Michael Clarke Duncan | David Morse</p>
+              <?php renderHeaderButtons($movie_id, $movie_title, $movie_type); ?>
             </div>
             <br>
           </div>
@@ -95,8 +96,6 @@ $movie_type = 'movie';
       </div>
     </div>
     <div class="space"></div>
-
-    <?php renderWatchlistButtons($movie_id, $movie_title, $movie_type); ?>
 
     <div class="movieratefinal">
       <h2 class="infotitlefinal">The Green Mile</h2>

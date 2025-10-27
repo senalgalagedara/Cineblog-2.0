@@ -37,6 +37,7 @@ $movie_type = 'series';
               <p class="podidetails">2014 - 2023   |   Sci-fi    |    9 Seasons</p>
               <p class="details">Barry Allen, a forensic investigator in Central City, gains the power of superhuman speed from a freak accident. He decides to use it to fight crime as the Flash, a costumed superhero.</p>
               <p class="cast">Grant Gustin | Candice Patton | Danielle Panabaker</p>
+              <?php renderHeaderButtons($movie_id, $movie_title, $movie_type); ?>
             </div>
             <br>
           </div>
@@ -91,8 +92,6 @@ $movie_type = 'series';
       </div>
     </div>
     <div class="space"></div>
-
-    <?php renderWatchlistButtons($movie_id, $movie_title, $movie_type); ?>
 
     <div class="movieratefinal">
       <h2 class="infotitlefinal">The Flash</h2>

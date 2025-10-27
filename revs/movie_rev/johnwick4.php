@@ -40,6 +40,7 @@ $movie_type = 'movie';
               <p class="podidetails">2023   |   Action/Thriller    |    2h 49m</p>
               <p class="details">With the price on his head ever increasing, legendary hit man John Wick takes his fight against the High Table global as he seeks out the most powerful players in the underworld, from New York to Paris to Japan to Berlin.</p>
               <p class="cast">Jonathan Majors | Donnie Yen | Bill Skarsgård</p>
+              <?php renderHeaderButtons($movie_id, $movie_title, $movie_type); ?>
             </div>
             <br>
           </div>
@@ -100,8 +101,6 @@ $movie_type = 'movie';
       </div>
     </div>
     <div class="space"></div>
-
-    <?php renderWatchlistButtons($movie_id, $movie_title, $movie_type); ?>
 
     <div class="movieratefinal">
       <h2 class="infotitlefinal">JOHN WICK: CHAPTER 4</h2>

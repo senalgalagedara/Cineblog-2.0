@@ -38,6 +38,7 @@ $movie_type = 'series';
               <p class="podidetails">2022   |   Action    |    1 Seasons</p>
               <p class="details">After recovering from his injures, Christopher Smith is forced to join a black ops squad and eliminate parasites that have taken over human bodies around the world.</p>
               <p class="cast">John Cena | Freddie Stroma | Jennifer Holland</p>
+              <?php renderHeaderButtons($movie_id, $movie_title, $movie_type); ?>
             </div>
             <br>
           </div>
@@ -91,8 +92,6 @@ $movie_type = 'series';
       </div>
     </div>
     <div class="space"></div>
-
-    <?php renderWatchlistButtons($movie_id, $movie_title, $movie_type); ?>
 
     <div class="movieratefinal">
       <h2 class="infotitlefinal">Peacemaker</h2>

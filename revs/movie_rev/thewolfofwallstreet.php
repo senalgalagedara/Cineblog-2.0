@@ -40,6 +40,7 @@ $movie_type = 'movie';
               <p class="podidetails">2013   |   Crime/Comedy    |    3h</p>
               <p class="details">Introduced to life in the fast lane through stockbroking, Jordan Belfort takes a hit after a Wall Street crash. He teams up with Donnie Azoff, cheating his way to the top as his relationships slide.</p>
               <p class="cast">Leonardo DiCaprio | Margot Robbie | Jonah Hill</p>
+              <?php renderHeaderButtons($movie_id, $movie_title, $movie_type); ?>
             </div>
             <br>
           </div>
@@ -95,8 +96,6 @@ $movie_type = 'movie';
       </div>
     </div>
     <div class="space"></div>
-
-    <?php renderWatchlistButtons($movie_id, $movie_title, $movie_type); ?>
 
     <div class="movieratefinal">
       <h2 class="infotitlefinal">THE WOLF of WALL STREET</h2>

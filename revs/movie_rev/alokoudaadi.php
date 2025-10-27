@@ -40,6 +40,7 @@ $movie_type = 'movie';
               <p class="podidetails">2017   |   Drama/History    |    1h 53m</p>
               <p class="details">Aloko Udapadi is a 2017 Sinhala epic historical film based on the story of King Valagamba of Anuradhapura. It was co-directed by Chathra Weeraman and Baratha Hettiarachchi</p>
               <p class="cast">Uddika Premarathna | Darshan Dharmaraj | Roshan Ravindra</p>
+              <?php renderHeaderButtons($movie_id, $movie_title, $movie_type); ?>
             </div>
             <br>
           </div>
@@ -48,7 +49,6 @@ $movie_type = 'movie';
     </header> 
 
     <div class="space"></div>
-    <?php renderWatchlistButtons($movie_id, $movie_title, $movie_type); ?>
 
     <div class="movieratefinal">
       <h2 class="infotitlefinal">Aloko Udapadi</h2>

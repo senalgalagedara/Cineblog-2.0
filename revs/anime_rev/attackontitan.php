@@ -38,6 +38,7 @@ $movie_type = 'anime';
               <p class="podidetails">2013 - 2023   |   Action    |    4 Seasons</p>
               <p class="details">Humankind constructs lofty walls to safeguard itself from immense creatures, the Titans. It battles to regain its land captured by the Titans which is not easy.</p>
               <p class="cast">Yuki Kaji | Marina Inoue | Yui Ishikawa</p>
+              <?php renderHeaderButtons($movie_id, $movie_title, $movie_type); ?>
             </div>
             <br>
           </div>
@@ -93,8 +94,6 @@ $movie_type = 'anime';
       </div>
     </div>
     <div class="space"></div>
-
-    <?php renderWatchlistButtons($movie_id, $movie_title, $movie_type); ?>
 
     <div class="movieratefinal">
       <h2 class="infotitlefinal">Attack On Titan</h2>

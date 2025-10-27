@@ -40,6 +40,7 @@ $movie_type = 'movie';
               <p class="podidetails">1972   |   Crime/Thriller    |    2h 55m</p>
               <p class="details">Don Vito Corleone, head of a mafia family, decides to hand over his empire to his youngest son, Michael. However, his decision unintentionally puts the lives of his loved ones in grave danger.</p>
               <p class="cast">Al Pacino| Marlon Brando | Talia Shire</p>
+              <?php renderHeaderButtons($movie_id, $movie_title, $movie_type); ?>
             </div>
             <br>
           </div>
@@ -95,8 +96,6 @@ $movie_type = 'movie';
       </div>
     </div>
     <div class="space"></div>
-
-    <?php renderWatchlistButtons($movie_id, $movie_title, $movie_type); ?>
 
     <div class="movieratefinal">
       <h2 class="infotitlefinal">The Godfather</h2>

@@ -40,6 +40,7 @@ $movie_type = 'movie';
               <p class="podidetails">2024   |   Comedy/Adventure    |    1h 34m</p>
               <p class="details">Po must train a new warrior when he's chosen to become the spiritual leader of the Valley of Peace. However, when a powerful shape-shifting sorceress sets her eyes on his Staff of Wisdom, he suddenly realizes he's going to need some help.</p>
               <p class="cast">Jack Black | Awkwafina | Bryan Cranston</p>
+              <?php renderHeaderButtons($movie_id, $movie_title, $movie_type); ?>
             </div>
             <br>
           </div>
@@ -95,8 +96,6 @@ $movie_type = 'movie';
       </div>
     </div>
     <div class="space"></div>
-
-    <?php renderWatchlistButtons($movie_id, $movie_title, $movie_type); ?>
 
     <div class="movieratefinal">
       <h2 class="infotitlefinal">Kung Fu Panda 4</h2>
